@@ -16,6 +16,7 @@ Cada repositório representa um passo no meu crescimento na área da tecnologia.
 ---
 
 ## 🔗 Meus Links
+🔗 [GitHub Projects – Minha Jornada na T.I.](https://github.com/users/fiamaribeiro/projects/3/views/1)
 - [LinkedIn](https://www.linkedin.com/in/fiamaribeiro/)  
 - ✨ **Este GitHub é meu portfólio em construção. Seja bem-vindo(a)!**
 
