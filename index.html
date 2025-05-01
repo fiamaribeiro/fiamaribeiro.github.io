@@ -1,70 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio | Fiama Ribeiro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      background-color: #f5f5f5;
-      color: #333;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
     }
     header {
-      background-color: #4B0082;
-      color: white;
       text-align: center;
-      padding: 2rem 1rem;
+      margin-bottom: 2rem;
     }
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+      font-size: 3rem;
+      color: #7ee8fa;
     }
     header p {
       font-size: 1.2rem;
-      margin-top: 0.5rem;
-    }
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      color: #ccc;
     }
     section {
       margin-bottom: 2rem;
     }
     h2 {
-      color: #4B0082;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.5rem;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #7ee8fa;
+      border-left: 5px solid #7ee8fa;
+      padding-left: 0.5rem;
     }
     ul {
-      list-style: none;
-      padding: 0;
+      list-style-type: none;
+      padding-left: 1rem;
     }
     li {
-      margin: 0.5rem 0;
+      margin-bottom: 0.8rem;
     }
     a {
-      color: #4B0082;
+      color: #a0e9fd;
       text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
     footer {
       text-align: center;
-      padding: 1rem;
-      background-color: #eee;
       font-size: 0.9rem;
+      color: #aaa;
+      margin-top: 3rem;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Fiama Ribeiro</h1>
-    <p>Estudante de Gestão de T.I. focada em aprender, crescer e transformar tecnologia em soluções inteligentes 💡</p>
-  </header>
+  <div class="container">
+    <header>
+      <h1>Fiama Ribeiro</h1>
+      <p>Estudante de Gestão de T.I. focada em aprender, crescer e transformar tecnologia em soluções inteligentes 💡</p>
+    </header>
 
-  <main>
     <section>
       <h2>👩‍💻 Sobre Mim</h2>
       <p>Sou estudante de Gestão de T.I. na Faculdade Anhanguera e atualmente trabalho na empresa Contrei como auxiliar de contratos. Estou me desenvolvendo em tecnologia através de cursos práticos como os bootcamps da DIO e a formação em Salesforce. Tenho paixão por aprender e aplicar meus conhecimentos na prática!</p>
@@ -73,8 +87,8 @@
     <section>
       <h2>🚀 Projetos</h2>
       <ul>
-        <li><a href="https://github.com/fiamaribeiro/fiamaribeiro.github.io">Portfólio Pessoal</a> – Meu site pessoal criado com HTML e CSS, hospedado no GitHub Pages.</li>
-        <li><a href="https://github.com/fiamaribeiro">Outros projetos no GitHub</a> – Confira meu progresso e experimentos com JavaScript, lógica de programação e mais.</li>
+        <li><a href="https://github.com/fiamaribeiro/fiamaribeiro.github.io" target="_blank">Portfólio Pessoal</a> – Meu site pessoal criado com HTML e CSS, hospedado no GitHub Pages.</li>
+        <li><a href="https://github.com/fiamaribeiro" target="_blank">Outros projetos no GitHub</a> – Confira meu progresso e experimentos com JavaScript, lógica de programação e mais.</li>
       </ul>
     </section>
 
@@ -94,10 +108,10 @@
         <li><a href="https://www.linkedin.com/in/fiamaribeirocosta" target="_blank">LinkedIn: /fiamaribeirocosta</a></li>
       </ul>
     </section>
-  </main>
 
-  <footer>
-    © 2025 Fiama Ribeiro. Todos os direitos reservados.
-  </footer>
+    <footer>
+      © 2025 Fiama Ribeiro. Todos os direitos reservados.
+    </footer>
+  </div>
 </body>
 </html>
