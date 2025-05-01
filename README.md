@@ -1,25 +1,29 @@
-# 👋 Olá! Eu sou a Fiama
+# 💻 Portfólio Pessoal – Fiama Ribeiro
 
-🎓 Estudante de **Gestão de T.I.** na Anhanguera  
-💼 Auxiliar de Contratos na Contrei  
-🚀 Em construção para a área tech
+Este é o meu portfólio pessoal, desenvolvido com HTML e CSS, com visual moderno e leve, focado em apresentar minha trajetória, projetos e formações na área de T.I.
 
-Atualmente estou mergulhando em:
-- 🧠 Lógica de programação
-- 📊 Big Data & NoSQL
-- 🔥 Firebase
-- 💻 Projetos práticos com foco em T.I.
+## ✨ Sobre Mim
+Estudante de Gestão de T.I. na Faculdade Anhanguera, atuo como auxiliar de contratos na empresa Contrei. Estou em constante aprendizado, com foco em tecnologia, lógica de programação e ferramentas como Salesforce.
 
-📌 Aqui no GitHub compartilho meus estudos, projetos e aprendizados!  
-Cada repositório representa um passo no meu crescimento na área da tecnologia.
+## 🔗 Acesse o Portfólio Online
+➡️ [fiamaribeiro.github.io](https://fiamaribeiro.github.io)
 
----
+## 🛠️ Tecnologias Utilizadas
+- HTML5
+- CSS3
+- GitHub Pages
 
-## 🔗 Meus Links
-🔗 [GitHub Projects – Minha Jornada na T.I.](https://github.com/users/fiamaribeiro/projects/3/views/1)
-- [LinkedIn](https://www.linkedin.com/in/fiamaribeiro/)  
-- ✨ **Este GitHub é meu portfólio em construção. Seja bem-vindo(a)!**
+## 📌 Destaques do Portfólio
+- Sobre mim e minha trajetória profissional
+- Projetos hospedados no GitHub
+- Cursos em andamento
+- Contatos profissionais
 
----
+## 🚀 Projetos e Cursos
+- Formação Lógica de Programação – DIO
+- Bootcamp ChatGPT for Devs – DIO
+- Curso oficial de Salesforce
 
-> “A tecnologia é construída por quem está disposto a aprender todos os dias.” 💙
+## 📫 Contato
+- GitHub: [@fiamaribeiro](https://github.com/fiamaribeiro)
+- LinkedIn: [Fiama Ribeiro Costa](https://www.linkedin.com/in/fiamaribeirocosta)
