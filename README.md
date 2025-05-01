@@ -1,9 +1,9 @@
 # 💻 Portfólio Pessoal – Fiama Ribeiro
 
-Este é o meu portfólio pessoal, desenvolvido com HTML e CSS, com visual moderno e leve, focado em apresentar minha trajetória, projetos e formações na área de T.I.
+Este é o meu portfólio pessoal, desenvolvido com HTML e CSS, com um visual limpo e moderno. Aqui apresento minha trajetória, projetos e formações na área de T.I.
 
 ## ✨ Sobre Mim
-Estudante de Gestão de T.I. na Faculdade Anhanguera, atuo como auxiliar de contratos na empresa Contrei. Estou em constante aprendizado, com foco em tecnologia, lógica de programação e ferramentas como Salesforce.
+Estudante de Gestão de T.I. na Faculdade Anhanguera e auxiliar de contratos na empresa Contrei. Estou me especializando em tecnologia através de formações práticas como os bootcamps da DIO e o curso oficial da Salesforce.
 
 ## 🔗 Acesse o Portfólio Online
 ➡️ [fiamaribeiro.github.io](https://fiamaribeiro.github.io)
@@ -14,13 +14,12 @@ Estudante de Gestão de T.I. na Faculdade Anhanguera, atuo como auxiliar de cont
 - GitHub Pages
 
 ## 📌 Destaques do Portfólio
-- Sobre mim e minha trajetória profissional
-- Projetos hospedados no GitHub
-- Cursos em andamento
-- Contatos profissionais
+- Seção \"Sobre Mim\" com minha trajetória profissional
+- Projetos e cursos em andamento
+- Contato com links para GitHub e LinkedIn
 
 ## 🚀 Projetos e Cursos
-- Formação Lógica de Programação – DIO
+- Bootcamp Formação Lógica de Programação – DIO
 - Bootcamp ChatGPT for Devs – DIO
 - Curso oficial de Salesforce
 
