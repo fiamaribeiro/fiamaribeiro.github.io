@@ -1,37 +1,87 @@
 [
-{
-"name": "Dashboard Financeiro Pessoal — Power BI",
-"type": "data",
-"desc": "Análise de despesas fixas, parcelados e metas de economia.",
-"tech": ["Power BI", "DAX"],
-"thumb": "assets/powerbi-financas.png",
-"powerbi_embed": "REPLACE_ME_POWERBI_LINK_FINANCAS"
-},
-{
-"name": "Dashboard Compras/Contratos — Power BI",
-"type": "data",
-"desc": "Indicadores de fornecedores, lead time e valores por centro de custo.",
-"tech": ["Power BI", "DAX"],
-"thumb": "assets/powerbi-compras.png",
-"powerbi_embed": "REPLACE_ME_POWERBI_LINK_COMPRAS"
-},
-{
-"name": "Azure Speech + Language — DIO",
-"type": "web",
-"desc": "Projeto de demonstração dos serviços de Speech e Language no Azure.",
-"tech": ["Azure", "Cognitive Services"],
-"thumb": "assets/azure-speech.png",
-"github": "https://github.com/fiamaribeiro/dio-azure-speech-language"
-},
-{
-"name": "Chat App — Node.js + React",
-"type": "web",
-"desc": "Frontend + backend simulando um chat com API (projeto de estudos).",
-"tech": ["React", "Node.js"],
-"thumb": "assets/chat.png",
-"github": "REPLACE_ME_GITHUB_CHAT",
-"demo": "REPLACE_ME_DEMO_CHAT"
-},
-{
-"name": "Calculadora de Partidas Rankeadas",
+  {
+    "name": "Dashboard de Produção",
+    "type": "data",
+    "desc": "Análise de produção com KPIs de produtividade e qualidade.",
+    "tech": ["Power BI", "DAX"],
+    "thumb": "assets/powerbi-producao.png"
+  },
+  {
+    "name": "Dashboard RH",
+    "type": "data",
+    "desc": "Visualização de contratações, turnover e distribuição de funcionários.",
+    "tech": ["Power BI", "DAX"],
+    "thumb": "assets/powerbi-rh.png"
+  },
+  {
+    "name": "Dashboard RH — Horas Extras",
+    "type": "data",
+    "desc": "Detalhamento de horas extras por cargo e salário total.",
+    "tech": ["Power BI", "DAX"],
+    "thumb": "assets/powerbi-rh1.png"
+  },
+  {
+    "name": "Dashboard de Vendas",
+    "type": "data",
+    "desc": "Análise de faturamento, vendas por marca e distribuição por continente.",
+    "tech": ["Power BI", "DAX"],
+    "thumb": "assets/powerbi-vendas.png"
+  },
+
+  {
+    "name": "Azure Speech + Language — DIO",
+    "type": "web",
+    "desc": "Demonstração de serviços de reconhecimento de fala e análise de linguagem no Azure.",
+    "tech": ["Azure", "Cognitive Services"],
+    "thumb": "assets/azure-speech.png",
+    "github": "https://github.com/fiamaribeiro/dio-azure-speech-language"
+  },
+  {
+    "name": "ChatGPT Clone — Node.js + React",
+    "type": "web",
+    "desc": "Integração frontend/backend simulando um chat com API.",
+    "tech": ["React", "Node.js"],
+    "thumb": "assets/chat.png",
+    "github": "https://github.com/fiamaribeiro/chatgpt-clone-node-react"
+  },
+  {
+    "name": "Calculadora de Partidas Rankeadas",
+    "type": "scripts",
+    "desc": "Desafio em JavaScript (DIO) com regras de vitórias/derrotas e nível final.",
+    "tech": ["JavaScript"],
+    "thumb": "assets/ranked.png",
+    "github": "https://github.com/fiamaribeiro/calculadora-rankeadas-node"
+  },
+  {
+    "name": "Classe Herói (Console)",
+    "type": "scripts",
+    "desc": "Projeto introdutório de lógica/POO para jogo em console.",
+    "tech": ["JavaScript"],
+    "thumb": "assets/hero.png",
+    "github": "https://github.com/fiamaribeiro/classe-heroi"
+  },
+  {
+    "name": "Housing Map — Salesforce LWC",
+    "type": "web",
+    "desc": "Interface de mapeamento de imóveis com Salesforce Lightning Web Components.",
+    "tech": ["Salesforce", "LWC", "JavaScript"],
+    "thumb": "assets/housing-map.png",
+    "github": "https://github.com/fiamaribeiro/housing-map-salesforce"
+  },
+  {
+    "name": "Desafio Felipão — DIO",
+    "type": "scripts",
+    "desc": "Desafio de lógica da DIO (condicionais, laços, objetos).",
+    "tech": ["JavaScript"],
+    "thumb": "assets/felipao.png",
+    "github": "https://github.com/fiamaribeiro/desafio-felipao-dio"
+  },
+  {
+    "name": "Contribuindo em Projeto Open Source (Lab DIO)",
+    "type": "other",
+    "desc": "Fork e contribuições no laboratório de Open Source da DIO.",
+    "tech": ["Git", "GitHub"],
+    "thumb": "assets/open-source.png",
+    "github": "https://github.com/fiamaribeiro/dio-lab-open-source"
+  }
 ]
