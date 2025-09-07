@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfólio — Fiama Ribeiro</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<div>
+<h1>Fiama Ribeiro</h1>
+<p class="subtitle">Gestão de T.I. • Projetos em Frontend, Backend, Automação e Data/Power BI</p>
+</div>
+<nav class="links">
+<a href="https://github.com/fiamaribeiro" target="_blank" rel="noopener">GitHub</a>
+<a href="https://www.linkedin.com/in/" target="_blank" rel="noopener">LinkedIn</a>
+<a href="mailto:seuemail@email.com">Contato</a>
+</nav>
+</div>
+</header>
+
+
+<main class="container">
+<section class="intro">
+<img src="assets/avatar.png" alt="Avatar" class="avatar" onerror="this.style.display='none'">
+<div>
+<h2>Sobre mim</h2>
+<p>
+Estudante de Gestão de T.I. (Anhanguera) e auxiliar de contratos na Contrei. Em transição para Tech,
+com projetos em Node.js, React e Python, automações e visualização de dados com Power BI.
+</p>
+</div>
+</section>
+
+
+<section class="toolbar">
+<div class="filters">
+<button class="chip is-active" data-filter="all">Todos</button>
+<button class="chip" data-filter="web">Web</button>
+<button class="chip" data-filter="data">Data/Power BI</button>
+<button class="chip" data-filter="scripts">Scripts</button>
+<button class="chip" data-filter="other">Outros</button>
+</div>
+<input id="search" type="search" placeholder="Buscar por nome/tech..." aria-label="Buscar" />
+</section>
+
+
+<section id="projects" class="grid"></section>
+</main>
+
+
+<!-- Modal para Power BI -->
+<div id="modal" class="modal" aria-hidden="true">
+<div class="modal-backdrop" data-close></div>
+<div class="modal-content" role="dialog" aria-modal="true" aria-label="Visualização">
+<button class="modal-close" title="Fechar" data-close>&times;</button>
+<div id="modalBody"></div>
+</div>
+</div>
+
+
+<footer class="site-footer">
+<div class="container">
+<p>© <span id="year"></span> Fiama Ribeiro — Feito com ❤️ e deploy no GitHub Pages</p>
+</div>
+</html>
