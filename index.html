@@ -1,141 +1,21 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio | Fiama Ribeiro</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #f5f0fa;
-      color: #333;
-      line-height: 1.6;
-      padding: 2rem;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      background-color: #ffffff;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-      animation: fadeIn 1.2s ease-in-out;
-    }
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    header {
-      text-align: center;
-      margin-bottom: 2rem;
-      animation: slideDown 1s ease-in-out;
-    }
-    @keyframes slideDown {
-      from {
-        opacity: 0;
-        transform: translateY(-20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    header h1 {
-      font-size: 3rem;
-      color: #4B0082;
-    }
-    header p {
-      font-size: 1.2rem;
-      color: #555;
-    }
-    section {
-      margin-bottom: 2rem;
-      animation: fadeIn 1s ease-in-out;
-    }
-    h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      color: #4B0082;
-      border-left: 5px solid #ccc;
-      padding-left: 0.5rem;
-    }
-    ul {
-      list-style-type: none;
-      padding-left: 1rem;
-    }
-    li {
-      margin-bottom: 0.8rem;
-    }
-    a {
-      color: #4B0082;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-    a:hover {
-      text-decoration: underline;
-      color: #6a0dad;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #777;
-      margin-top: 3rem;
-      animation: fadeIn 2s ease-in-out;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio — Fiama Ribeiro</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Fiama Ribeiro</h1>
-      <p>Estudante de Gestão de T.I. focada em aprender, crescer e transformar tecnologia em soluções inteligentes 💡</p>
-    </header>
-
-    <section>
-      <h2>👩‍💻 Sobre Mim</h2>
-      <p>Sou estudante de Gestão de T.I. na Faculdade Anhanguera e atualmente trabalho na empresa Contrei como auxiliar de contratos. Estou me desenvolvendo em tecnologia através de cursos práticos como os bootcamps da DIO e a formação em Salesforce. Tenho paixão por aprender e aplicar meus conhecimentos na prática!</p>
-    </section>
-
-    <section>
-      <h2>🚀 Projetos</h2>
-      <ul>
-        <li><a href="https://github.com/fiamaribeiro/fiamaribeiro.github.io" target="_blank">Portfólio Pessoal</a> – Meu site pessoal criado com HTML e CSS, hospedado no GitHub Pages.</li>
-        <li><a href="https://github.com/fiamaribeiro" target="_blank">Outros projetos no GitHub</a> – Confira meu progresso e experimentos com JavaScript, lógica de programação e mais.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>📚 Cursos em Andamento</h2>
-      <ul>
-        <li>Bootcamp Formação Lógica de Programação – DIO</li>
-        <li>Bootcamp ChatGPT for Devs – DIO</li>
-        <li>Curso de Salesforce – Plataforma oficial Salesforce</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>📫 Contato</h2>
-      <ul>
-        <li><a href="https://github.com/fiamaribeiro" target="_blank">GitHub: @fiamaribeiro</a></li>
-        <li><a href="https://www.linkedin.com/in/fiamaribeirocosta" target="_blank">LinkedIn: /fiamaribeirocosta</a></li>
-      </ul>
-    </section>
-
-    <footer>
-      © 2025 Fiama Ribeiro. Todos os direitos reservados.
-    </footer>
-  </div>
-</body>
-</html>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div>
+        <h1>Fiama Ribeiro</h1>
+        <p class="subtitle">Gestão de T.I. • Projetos em Frontend, Backend, Automação e Data/Power BI</p>
+      </div>
+      <nav class="links">
+        <a href="https://github.com/fiamaribeiro" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/" target="
