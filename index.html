@@ -18,4 +18,138 @@
       </div>
       <nav class="links">
         <a href="https://github.com/fiamaribeiro" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/" target="
+        <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:seuemail@email.com">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <img src="assets/avatar.png" alt="Avatar" class="avatar" onerror="this.style.display='none'">
+      <div>
+        <h2>Sobre mim</h2>
+        <p>
+          Estudante de Gestão de T.I. (Anhanguera) e auxiliar de contratos na Contrei. Em transição para Tech,
+          com projetos em Node.js, React e Python, automações e visualização de dados com Power BI.
+        </p>
+      </div>
+    </section>
+
+    <section class="toolbar">
+      <div class="filters">
+        <button class="chip is-active" data-filter="all">Todos</button>
+        <button class="chip" data-filter="web">Web</button>
+        <button class="chip" data-filter="data">Data/Power BI</button>
+        <button class="chip" data-filter="scripts">Scripts</button>
+        <button class="chip" data-filter="other">Outros</button>
+      </div>
+      <input id="search" type="search" placeholder="Buscar por nome/tech..." aria-label="Buscar" />
+    </section>
+
+    <section id="projects" class="grid"></section>
+  </main>
+
+  <!-- Modal para Power BI -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-label="Visualização">
+      <button class="modal-close" title="Fechar" data-close>&times;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Fiama Ribeiro — Feito com ❤️ e deploy no GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script>
+    const elGrid = document.getElementById('projects');
+    const elSearch = document.getElementById('search');
+    const chips = document.querySelectorAll('.chip');
+    let all = [], current = [], active = 'all';
+
+    const sanitize = (s='') => (s + '').toLowerCase();
+
+    function render(list){
+      elGrid.innerHTML = list.map(card).join('');
+      attachCardEvents();
+    }
+
+    function card(p){
+      const img = p.thumb ? `<img src="${p.thumb}" alt="${p.name}" loading="lazy">` : '';
+      const tech = (p.tech || []).map(t=>`<span class="tag">${t}</span>`).join('');
+
+      const links = `
+        <div class="actions">
+          ${p.github ? `<a class="btn" href="${p.github}" target="_blank" rel="noopener">GitHub</a>` : ''}
+          ${p.demo ? `<a class="btn" href="${p.demo}" target="_blank" rel="noopener">Demo</a>` : ''}
+          ${p.type === 'data' && p.powerbi_embed ? `<button class="btn ghost" data-embed="${encodeURIComponent(p.powerbi_embed)}">Ver Power BI</button>` : ''}
+        </div>`;
+
+      return `
+      <article class="card" data-type="${p.type}">
+        ${img}
+        <div class="card-body">
+          <h3>${p.name}</h3>
+          <p class="desc">${p.desc || ''}</p>
+          <div class="tags">${tech}</div>
+          ${links}
+        </div>
+      </article>`
+    }
+
+    function attachCardEvents(){
+      document.querySelectorAll('[data-embed]').forEach(btn => {
+        btn.addEventListener('click', () => openEmbed(decodeURIComponent(btn.dataset.embed)));
+      });
+    }
+
+    function applyFilters(){
+      const q = sanitize(elSearch.value);
+      current = all.filter(p => (
+        (active === 'all' || p.type === active) &&
+        (sanitize(p.name).includes(q) ||
+         sanitize(p.desc).includes(q) ||
+         (p.tech || []).some(t => sanitize(t).includes(q)))
+      ));
+      render(current);
+    }
+
+    chips.forEach(c => c.addEventListener('click', () => {
+      chips.forEach(x=>x.classList.remove('is-active'));
+      c.classList.add('is-active');
+      active = c.dataset.filter;
+      applyFilters();
+    }));
+
+    elSearch.addEventListener('input', applyFilters);
+
+    function openEmbed(src){
+      const modal = document.getElementById('modal');
+      const body = document.getElementById('modalBody');
+      body.innerHTML = `<div class="embed-wrap"><iframe src="${src}" frameborder="0" allowfullscreen></iframe></div>`;
+      modal.setAttribute('aria-hidden','false');
+      modal.classList.add('show');
+    }
+
+    document.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', closeModal));
+    function closeModal(){
+      const modal = document.getElementById('modal');
+      const body = document.getElementById('modalBody');
+      body.innerHTML = '';
+      modal.classList.remove('show');
+      modal.setAttribute('aria-hidden','true');
+    }
+
+    fetch('projects.json')
+      .then(r => r.json())
+      .then(data => { all = data; applyFilters(); })
+      .catch(() => { elGrid.innerHTML = '<p>Não foi possível carregar os projetos.</p>'; });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
