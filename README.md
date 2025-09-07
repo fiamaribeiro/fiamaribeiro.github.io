@@ -1,28 +1,36 @@
-# 💻 Portfólio Pessoal – Fiama Ribeiro
+# 🌐 Portfólio — Fiama Ribeiro
 
-Este é o meu portfólio pessoal, desenvolvido com HTML e CSS, com um visual limpo e moderno. Aqui apresento minha trajetória, projetos e formações na área de T.I.
+Bem-vindo ao meu portfólio online, publicado com **GitHub Pages**.  
+Aqui você encontra meus principais projetos de **Frontend, Backend, Automação e Data/Power BI**.
 
-## ✨ Sobre Mim
-Estudante de Gestão de T.I. na Faculdade Anhanguera e auxiliar de contratos na empresa Contrei. Estou me especializando em tecnologia através de formações práticas como os bootcamps da DIO e o curso oficial da Salesforce.
+🔗 **Veja o portfólio online:**  
+👉 [https://fiamaribeiro.github.io](https://fiamaribeiro.github.io)
 
-## 🔗 Acesse o Portfólio Online
-➡️ [fiamaribeiro.github.io](https://fiamaribeiro.github.io)
+---
 
-## 🛠️ Tecnologias Utilizadas
-- HTML5
-- CSS3
-- GitHub Pages
+## 📊 Projetos em Destaque
 
-## 📌 Destaques do Portfólio
-- Seção \"Sobre Mim\" com minha trajetória profissional
-- Projetos e cursos em andamento
-- Contato com links para GitHub e LinkedIn
+### 🔹 Data / Power BI
+- **Dashboard de Produção** — análise de KPIs de produtividade e qualidade.  
+- **Dashboard RH** — contratações, turnover e distribuição de funcionários.  
+- **Dashboard Horas Extras (RH)** — detalhamento por cargo e salários.  
+- **Dashboard de Vendas** — faturamento, marcas e continentes.
 
-## 🚀 Projetos e Cursos
-- Bootcamp Formação Lógica de Programação – DIO
-- Bootcamp ChatGPT for Devs – DIO
-- Curso oficial de Salesforce
+### 🔹 Web / Backend
+- **ChatGPT Clone (Node.js + React)** — integração frontend/backend simulando chat com API.  
+- **Housing Map (Salesforce LWC)** — interface de mapeamento de imóveis.  
+- **Azure Speech + Language (DIO)** — uso dos serviços de IA da Microsoft Azure.  
 
-## 📫 Contato
-- GitHub: [@fiamaribeiro](https://github.com/fiamaribeiro)
-- LinkedIn: [Fiama Ribeiro Costa](https://www.linkedin.com/in/fiamaribeirocosta)
+### 🔹 Scripts / Lógica
+- **Calculadora de Partidas Rankeadas (JS)** — calcula vitórias, derrotas e nível.  
+- **Classe Herói (Console Game - JS)** — criação de personagens e classes.  
+- **Desafio Felipão (DIO)** — lógica em JavaScript.  
+
+### 🔹 Outros
+- **Contribuições Open Source (DIO)** — participação em laboratório colaborativo da DIO.  
+
+---
+
+## ⚡ Sobre mim
+Sou estudante de **Gestão de T.I. (Anhanguera)**, atuo como **Auxiliar de Contratos na Contrei** e estou em transição para a área de **Tecnologia**.  
+Participo de bootcamps (DIO, Santander, Salesforce)
