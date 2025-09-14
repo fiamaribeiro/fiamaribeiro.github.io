@@ -1,5 +1,5 @@
 // scripts/generate-projects.js
-// Teste inicial: gera um projects.json simples
+// Teste inicial: gera um projects.json simples para validar a Action.
 
 const fs = require("fs");
 
@@ -14,7 +14,5 @@ const projects = [
   }
 ];
 
-// Escreve o arquivo projects.json
 fs.writeFileSync("projects.json", JSON.stringify(projects, null, 2), "utf8");
-
-console.log("✅ Arquivo projects.json atualizado com sucesso!");
+console.log("✅ projects.json escrito com sucesso!");
