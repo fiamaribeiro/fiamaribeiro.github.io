@@ -9,7 +9,7 @@ const projects = [
     type: "demo",
     desc: "Este é apenas um teste para verificar se a Action está funcionando.",
     tech: ["Node.js", "GitHub Actions"],
-    thumb: "https://avatars.githubusercontent.com/u/9919?s=200&v=4", // logo do GitHub
+    thumb: "https://avatars.githubusercontent.com/u/9919?s=200&v=4",
     github: "https://github.com/fiamaribeiro/fiamaribeiro.github.io"
   }
 ];
