@@ -1,12 +1,9 @@
 name: Update projects.json
 
 on:
+  workflow_dispatch:        # você roda manualmente
   schedule:
-    - cron: "0 12 * * *"   # todo dia às 12:00 UTC
-  workflow_dispatch:        # executar manualmente
-  push:
-    paths:
-      - ".github/workflows/update-projects.yml"
+    - cron: "0 12 * * *"    # (opcional) todo dia às 12:00 UTC
 
 permissions:
   contents: write
@@ -23,12 +20,33 @@ jobs:
         with:
           node-version: "18"
 
-      - name: Generate projects.json
-        run: |
-          node scripts/generate-projects.js
+      - name: Node version
+        run: node -v
 
-      - name: Commit and push if changed
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: update projects.json (auto)"
-          file_pattern: projects.json
+      - name: Generate projects.json (test)
+        run: node scripts/generate-projects.js
+
+      - name: Show workspace state (debug)
+        run: |
+          ls -lah
+          echo "---- projects.json preview ----"
+          head -n 40 projects.json || true
+          echo "-------------------------------"
+          git status
+          git --no-pager diff --name-status || true
+
+      - name: Commit & push if changed
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # só commita se houver mudança no projects.json
+          if git status --porcelain | grep -E "projects.json"; then
+            git add projects.json
+            git commit -m "chore: update projects.json (auto)"
+            git push
+            echo "✅ changes pushed"
+          else
+            echo "ℹ️ no changes to commit"
+          fi
