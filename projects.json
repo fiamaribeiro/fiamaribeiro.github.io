@@ -1,13 +1,91 @@
 [
   {
-    "name": "Teste automático",
-    "type": "demo",
-    "desc": "Este é apenas um teste para verificar se a Action está funcionando.",
+    "name": "Classe Heroi",
+    "type": "other",
+    "desc": "",
     "tech": [
-      "Node.js",
-      "GitHub Actions"
+      "JavaScript"
     ],
-    "thumb": "https://avatars.githubusercontent.com/u/9919?s=200&v=4",
-    "github": "https://github.com/fiamaribeiro/fiamaribeiro.github.io"
+    "thumb": "https://opengraph.githubassets.com/1/fiamaribeiro/classe-heroi",
+    "github": "https://github.com/fiamaribeiro/classe-heroi"
+  },
+  {
+    "name": "Dashboard Rh Powerbi",
+    "type": "data",
+    "desc": "📊 Dashboard de RH desenvolvido no Power BI — Contratações, Turnover, Distribuição e Horas Extras.",
+    "tech": [],
+    "thumb": "https://opengraph.githubassets.com/1/fiamaribeiro/dashboard-rh-powerbi",
+    "github": "https://github.com/fiamaribeiro/dashboard-rh-powerbi",
+    "demo": "https://fiamaribeiro.github.io"
+  },
+  {
+    "name": "Dashboard Producao Powerbi",
+    "type": "data",
+    "desc": "⚙️ Dashboard de Produção em Power BI — Indicadores de produtividade, qualidade, horas produtivas e paradas.",
+    "tech": [],
+    "thumb": "https://opengraph.githubassets.com/1/fiamaribeiro/dashboard-producao-powerbi",
+    "github": "https://github.com/fiamaribeiro/dashboard-producao-powerbi",
+    "demo": "https://fiamaribeiro.github.io"
+  },
+  {
+    "name": "Calculadora Rankeadas Node",
+    "type": "other",
+    "desc": "",
+    "tech": [
+      "JavaScript"
+    ],
+    "thumb": "https://opengraph.githubassets.com/1/fiamaribeiro/calculadora-rankeadas-node",
+    "github": "https://github.com/fiamaribeiro/calculadora-rankeadas-node"
+  },
+  {
+    "name": "Dio Lab Open Source",
+    "type": "other",
+    "desc": "Repositório do lab \"Contribuindo em um Projeto Open Source no GitHub\" da Digital Innovation One.",
+    "tech": [
+      "Jupyter Notebook"
+    ],
+    "thumb": "https://opengraph.githubassets.com/1/fiamaribeiro/dio-lab-open-source",
+    "github": "https://github.com/fiamaribeiro/dio-lab-open-source",
+    "demo": "https://digitalinnovationone.github.io/dio-lab-open-source/"
+  },
+  {
+    "name": "Dio Azure Speech Language",
+    "type": "other",
+    "desc": "Laboratório DIO – Azure Speech & Language (STT/TTS, Sentiment, Key Phrases, Language Detection)",
+    "tech": [],
+    "thumb": "https://opengraph.githubassets.com/1/fiamaribeiro/dio-azure-speech-language",
+    "github": "https://github.com/fiamaribeiro/dio-azure-speech-language"
+  },
+  {
+    "name": "Chatgpt Clone Node React",
+    "type": "other",
+    "desc": "Projeto de integração React + Node.js + OpenAI",
+    "tech": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "thumb": "https://opengraph.githubassets.com/1/fiamaribeiro/chatgpt-clone-node-react",
+    "github": "https://github.com/fiamaribeiro/chatgpt-clone-node-react"
+  },
+  {
+    "name": "Dio Aws Stepfunctions Lab Fiama",
+    "type": "other",
+    "desc": "Lab DIO | Orquestração serverless com AWS Step Functions (Lambda + DynamoDB + SNS) — valida, processa em paralelo, persiste e notifica.",
+    "tech": [
+      "JavaScript"
+    ],
+    "thumb": "https://opengraph.githubassets.com/1/fiamaribeiro/dio-aws-stepfunctions-lab-fiama",
+    "github": "https://github.com/fiamaribeiro/dio-aws-stepfunctions-lab-fiama",
+    "demo": "https://fiamaribeiro.github.io/"
+  },
+  {
+    "name": "Aws Ec2 Lab",
+    "type": "other",
+    "desc": "Laboratório prático com EC2 na AWS: criação de instância, SG, Apache e Elastic IP",
+    "tech": [],
+    "thumb": "https://opengraph.githubassets.com/1/fiamaribeiro/aws-ec2-lab",
+    "github": "https://github.com/fiamaribeiro/aws-ec2-lab",
+    "demo": "https://fiamaribeiro.github.io/"
   }
 ]
