@@ -2,7 +2,7 @@
   {
     "name": "Aws Cloudformation Project",
     "type": "other",
-    "desc": "Infraestrutura como Código (IaC) na AWS com CloudFormation: VPC p��blica, S3 e EC2 opcional. Documentação + templates + prints do lab da DIO.",
+    "desc": "Infraestrutura como Código (IaC) na AWS com CloudFormation: VPC pública, S3 e EC2 opcional. Documentação + templates + prints do lab da DIO.",
     "tech": [],
     "thumb": "https://opengraph.githubassets.com/1/fiamaribeiro/aws-cloudformation-project",
     "github": "https://github.com/fiamaribeiro/aws-cloudformation-project"
