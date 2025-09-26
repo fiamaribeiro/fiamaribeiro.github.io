@@ -1,155 +1,155 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio — Fiama Ribeiro</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfólio • Fiama Ribeiro</title>
+  <meta name="description" content="Portfólio de Fiama Ribeiro — Gestão de T.I., Cloud/AWS, projetos e certificações.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div>
-        <h1>Fiama Ribeiro</h1>
-        <p class="subtitle">Gestão de T.I. • Projetos em Frontend, Backend, Automação e Data/Power BI</p>
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#hero" class="brand">Fiama<span>Ribeiro</span></a>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#skills">Skills</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#certificados">Certificados</a>
+      <a href="#contato" class="btn">Contato</a>
+      <button id="themeToggle" aria-label="Alternar tema">🌓</button>
+    </nav>
+  </div>
+</header>
+
+<section id="hero" class="hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <h1>Olá, eu sou a <span>Fiama</span> 👋</h1>
+      <p>Estudante de <strong>Gestão de T.I.</strong> (Anhanguera) e <strong>auxiliar de contratos</strong> na Contrei. Apaixonada por <strong>Cloud/AWS</strong>, automação e documentação técnica.</p>
+      <div class="hero-ctas">
+        <a href="#projetos" class="btn primary">Ver Projetos</a>
+        <a href="https://github.com/fiamaribeiro" target="_blank" rel="noopener" class="btn outline">GitHub</a>
       </div>
-      <nav class="links">
-        <a href="https://github.com/fiamaribeiro" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="mailto:seuemail@email.com">Contato</a>
-      </nav>
+      <div class="badges">
+        <span class="badge">AWS • Lambda • S3 • CloudWatch</span>
+        <span class="badge">Git & GitHub</span>
+        <span class="badge">Python</span>
+      </div>
     </div>
-  </header>
-
-  <main class="container">
-    <section class="intro">
-      <img src="assets/avatar.png" alt="Avatar" class="avatar" onerror="this.style.display='none'">
-      <div>
-        <h2>Sobre mim</h2>
-        <p>
-          Estudante de Gestão de T.I. (Anhanguera) e auxiliar de contratos na Contrei. Em transição para Tech,
-          com projetos em Node.js, React e Python, automações e visualização de dados com Power BI.
-        </p>
-      </div>
-    </section>
-
-    <section class="toolbar">
-      <div class="filters">
-        <button class="chip is-active" data-filter="all">Todos</button>
-        <button class="chip" data-filter="web">Web</button>
-        <button class="chip" data-filter="data">Data/Power BI</button>
-        <button class="chip" data-filter="scripts">Scripts</button>
-        <button class="chip" data-filter="other">Outros</button>
-      </div>
-      <input id="search" type="search" placeholder="Buscar por nome/tech..." aria-label="Buscar" />
-    </section>
-
-    <section id="projects" class="grid"></section>
-  </main>
-
-  <!-- Modal para Power BI -->
-  <div id="modal" class="modal" aria-hidden="true">
-    <div class="modal-backdrop" data-close></div>
-    <div class="modal-content" role="dialog" aria-modal="true" aria-label="Visualização">
-      <button class="modal-close" title="Fechar" data-close>&times;</button>
-      <div id="modalBody"></div>
+    <div class="hero-art">
+      <img src="assets/hero-placeholder.svg" alt="Ilustração de nuvem/AWS">
     </div>
   </div>
+</section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Fiama Ribeiro — Feito com ❤️ e deploy no GitHub Pages</p>
+<section id="sobre" class="section">
+  <div class="container grid-2">
+    <div>
+      <h2>Sobre</h2>
+      <p>Sou a Fiama, focada em construir uma base sólida em <strong>Cloud</strong> e <strong>automação</strong>. Gosto de transformar aprendizado em projetos práticos, com documentação clara e repositórios organizados.</p>
+      <p>Neste site você encontra meus principais projetos, incluindo meu <em>lab</em> de <strong>Lambda + S3 + CloudWatch</strong> construído no bootcamp da DIO.</p>
     </div>
-  </footer>
+    <div class="card facts">
+      <ul>
+        <li>🎓 Gestão de T.I. — Anhanguera</li>
+        <li>💼 Auxiliar de contratos — Contrei</li>
+        <li>🌩️ Stack favorita: AWS (Lambda, S3, CloudWatch)</li>
+        <li>📍 Brasil</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-  <script>
-    const elGrid = document.getElementById('projects');
-    const elSearch = document.getElementById('search');
-    const chips = document.querySelectorAll('.chip');
-    let all = [], current = [], active = 'all';
+<section id="skills" class="section alt">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="chips">
+      <span>AWS</span><span>Lambda</span><span>S3</span><span>CloudWatch</span>
+      <span>CloudFormation</span><span>Git</span><span>GitHub</span>
+      <span>Python</span><span>Markdown</span><span>CI/CD</span>
+    </div>
+  </div>
+</section>
 
-    const sanitize = (s='') => (s + '').toLowerCase();
-
-    function render(list){
-      elGrid.innerHTML = list.map(card).join('');
-      attachCardEvents();
-    }
-
-    function card(p){
-      const img = p.thumb ? `<img src="${p.thumb}" alt="${p.name}" loading="lazy">` : '';
-      const tech = (p.tech || []).map(t=>`<span class="tag">${t}</span>`).join('');
-
-      const links = `
+<section id="projetos" class="section">
+  <div class="container">
+    <h2>Projetos</h2>
+    <div class="cards">
+      <article class="card proj">
+        <h3>AWS Lambda + S3 Automation</h3>
+        <p>Função Lambda acionada por eventos do S3, com logs no CloudWatch. Repositório documentado com evidências e templates.</p>
+        <div class="tags"><span>AWS</span><span>Python</span><span>Serverless</span></div>
         <div class="actions">
-          ${p.github ? `<a class="btn" href="${p.github}" target="_blank" rel="noopener">GitHub</a>` : ''}
-          ${p.demo ? `<a class="btn" href="${p.demo}" target="_blank" rel="noopener">Demo</a>` : ''}
-          ${p.type === 'data' && p.powerbi_embed ? `<button class="btn ghost" data-embed="${encodeURIComponent(p.powerbi_embed)}">Ver Power BI</button>` : ''}
-        </div>`;
-
-      return `
-      <article class="card" data-type="${p.type}">
-        ${img}
-        <div class="card-body">
-          <h3>${p.name}</h3>
-          <p class="desc">${p.desc || ''}</p>
-          <div class="tags">${tech}</div>
-          ${links}
+          <a class="btn small" target="_blank" href="https://github.com/fiamaribeiro/aws-lambda-s3-automation">Repositório</a>
+          <a class="btn small outline" target="_blank" href="#">Demo</a>
         </div>
-      </article>`
-    }
+      </article>
+      <article class="card proj">
+        <h3>Portfólio no AWS Amplify</h3>
+        <p>Este site publicado com CI/CD no Amplify. Deploy automático a cada push.</p>
+        <div class="tags"><span>Amplify</span><span>HTML/CSS</span><span>CDN</span></div>
+        <div class="actions">
+          <a class="btn small" target="_blank" href="https://github.com/fiamaribeiro/fiamaribeiro.github.io">Repositório</a>
+          <a class="btn small outline" target="_blank" href="#">Live</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
-    function attachCardEvents(){
-      document.querySelectorAll('[data-embed]').forEach(btn => {
-        btn.addEventListener('click', () => openEmbed(decodeURIComponent(btn.dataset.embed)));
-      });
-    }
+<section id="certificados" class="section alt">
+  <div class="container">
+    <h2>Certificados</h2>
+    <div class="cards">
+      <article class="card cert">
+        <h3>Santander Code Girls — 2025</h3>
+        <p>Bootcamp de 40 horas pela DIO em parceria com o Santander. Enfoque em fundamentos de desenvolvimento e trilhas práticas.</p>
+        <a class="btn small" target="_blank" href="#">Ver certificado</a>
+      </article>
+      <article class="card cert">
+        <h3>Outros</h3>
+        <p>Adicione aqui novos certificados (AWS Skill Builder, cursos, etc.).</p>
+      </article>
+    </div>
+  </div>
+</section>
 
-    function applyFilters(){
-      const q = sanitize(elSearch.value);
-      current = all.filter(p => (
-        (active === 'all' || p.type === active) &&
-        (sanitize(p.name).includes(q) ||
-         sanitize(p.desc).includes(q) ||
-         (p.tech || []).some(t => sanitize(t).includes(q)))
-      ));
-      render(current);
-    }
+<section id="contato" class="section">
+  <div class="container grid-2">
+    <div>
+      <h2>Contato</h2>
+      <p>Curtiu meu trabalho? Vamos conversar! Estou aberta a colaborações, oportunidades e novos desafios.</p>
+      <ul class="contact">
+        <li>📧 <a href="mailto:contato@exemplo.com">contato@exemplo.com</a></li>
+        <li>💼 <a href="https://www.linkedin.com/in/fiamaribeiro" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li>🐙 <a href="https://github.com/fiamaribeiro" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+    <form class="card form" onsubmit="return false">
+      <label>Nome
+        <input type="text" placeholder="Seu nome">
+      </label>
+      <label>Email
+        <input type="email" placeholder="seu@email.com">
+      </label>
+      <label>Mensagem
+        <textarea rows="4" placeholder="Como posso ajudar?"></textarea>
+      </label>
+      <button class="btn primary" onclick="alert('Obrigada pela mensagem! Para contato real, use meu LinkedIn ou email 😊')">Enviar</button>
+    </form>
+  </div>
+</section>
 
-    chips.forEach(c => c.addEventListener('click', () => {
-      chips.forEach(x=>x.classList.remove('is-active'));
-      c.classList.add('is-active');
-      active = c.dataset.filter;
-      applyFilters();
-    }));
+<footer class="footer">
+  <div class="container">
+    <p>© <span id="year"></span> Fiama Ribeiro — Feito com AWS Amplify</p>
+  </div>
+</footer>
 
-    elSearch.addEventListener('input', applyFilters);
-
-    function openEmbed(src){
-      const modal = document.getElementById('modal');
-      const body = document.getElementById('modalBody');
-      body.innerHTML = `<div class="embed-wrap"><iframe src="${src}" frameborder="0" allowfullscreen></iframe></div>`;
-      modal.setAttribute('aria-hidden','false');
-      modal.classList.add('show');
-    }
-
-    document.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', closeModal));
-    function closeModal(){
-      const modal = document.getElementById('modal');
-      const body = document.getElementById('modalBody');
-      body.innerHTML = '';
-      modal.classList.remove('show');
-      modal.setAttribute('aria-hidden','true');
-    }
-
-    fetch('projects.json')
-      .then(r => r.json())
-      .then(data => { all = data; applyFilters(); })
-      .catch(() => { elGrid.innerHTML = '<p>Não foi possível carregar os projetos.</p>'; });
-
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+<script src="script.js"></script>
 </body>
 </html>
