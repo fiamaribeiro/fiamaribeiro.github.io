@@ -53,3 +53,9 @@ a{color:inherit;text-decoration:none}
 body.light{--bg:#f9fafb; --fg:#141414; --muted:#5b6575; --card:#ffffff; --line:#e5e7eb; background:#ffffff;}
 body.light .section.alt{background:linear-gradient(180deg,#fff, #f9fbff)}
 body.light .btn.primary{color:#fff}
+
+.avatar-and-brand{display:flex;gap:16px;align-items:center;margin-bottom:10px}
+.avatar{width:72px;height:72px;border-radius:50%;object-fit:cover;border:2px solid var(--line)}
+.social-row{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 6px}
+.social{display:inline-block;padding:8px 10px;border:1px solid var(--line);border-radius:10px;color:var(--fg);background:#0f0f21}
+.social:hover{transform:translateY(-1px)}
