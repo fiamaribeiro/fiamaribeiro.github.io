@@ -28,18 +28,34 @@
 <section id="hero" class="hero">
   <div class="container hero-inner">
     <div class="hero-text">
-      <h1>Olá, eu sou a <span>Fiama</span> 👋</h1>
-      <p>Estudante de <strong>Gestão de T.I.</strong> (Anhanguera) e <strong>auxiliar de contratos</strong> na Contrei. Apaixonada por <strong>Cloud/AWS</strong>, automação e documentação técnica.</p>
-      <div class="hero-ctas">
-        <a href="#projetos" class="btn primary">Ver Projetos</a>
-        <a href="https://github.com/fiamaribeiro" target="_blank" rel="noopener" class="btn outline">GitHub</a>
+      <div class="avatar-and-brand">
+        <img class="avatar" src="assets/avatar-fiama.jpg" alt="Foto de perfil de Fiama Ribeiro">
+        <div>
+          <h1>Olá, eu sou a <span>Fiama</span> 👋</h1>
+          <p>Estudante de <strong>Gestão de T.I.</strong> (Anhanguera) e <strong>Auxiliar de Contratos</strong> na Contrei. Apaixonada por <strong>Cloud/AWS</strong>, automação e documentação técnica.</p>
+        </div>
       </div>
+
+      <div class="social-row">
+        <a class="social" href="mailto:SEU-EMAIL-AQUI" target="_blank" rel="noopener" aria-label="Email">📧 Email</a>
+        <a class="social" href="https://www.linkedin.com/in/SEU-LINKEDIN/" target="_blank" rel="noopener" aria-label="LinkedIn">💼 LinkedIn</a>
+        <a class="social" href="https://github.com/fiamaribeiro" target="_blank" rel="noopener" aria-label="GitHub">🐙 GitHub</a>
+      </div>
+
+      <div class="hero-ctas">
+        <a href="#destaques" class="btn primary">Projetos em Destaque</a>
+        <a href="#projetos" class="btn outline">Todos os Projetos</a>
+      </div>
+
       <div class="badges">
         <span class="badge">AWS • Lambda • S3 • CloudWatch</span>
         <span class="badge">Git & GitHub</span>
         <span class="badge">Python</span>
+        <span class="badge">Serverless</span>
+        <span class="badge">CI/CD</span>
       </div>
     </div>
+
     <div class="hero-art">
       <img src="assets/hero-placeholder.svg" alt="Ilustração de nuvem/AWS">
     </div>
@@ -50,15 +66,15 @@
   <div class="container grid-2">
     <div>
       <h2>Sobre</h2>
-      <p>Sou a Fiama, focada em construir uma base sólida em <strong>Cloud</strong> e <strong>automação</strong>. Gosto de transformar aprendizado em projetos práticos, com documentação clara e repositórios organizados.</p>
-      <p>Neste site você encontra meus principais projetos, incluindo meu <em>lab</em> de <strong>Lambda + S3 + CloudWatch</strong> construído no bootcamp da DIO.</p>
+      <p>Sou a Fiama, construindo carreira em <strong>Cloud</strong> e <strong>automação</strong>, com base sólida em boas práticas, documentação clara e repositórios organizados. Curto transformar aprendizado em projetos reais — como o lab de <strong>Lambda + S3 + CloudWatch</strong> do bootcamp.</p>
+      <p>Hoje estudo <strong>Gestão de T.I.</strong> (Anhanguera) e atuo como <strong>Auxiliar de Contratos</strong> na Contrei. Busco oportunidades para aplicar minha visão prática, colaboração e foco em resultados.</p>
     </div>
     <div class="card facts">
       <ul>
         <li>🎓 Gestão de T.I. — Anhanguera</li>
-        <li>💼 Auxiliar de contratos — Contrei</li>
-        <li>🌩️ Stack favorita: AWS (Lambda, S3, CloudWatch)</li>
-        <li>📍 Brasil</li>
+        <li>💼 Auxiliar de Contratos — Contrei</li>
+        <li>🌩️ Favoritos: AWS (Lambda, S3, CloudWatch)</li>
+        <li>🧩 Interesses: Serverless, CI/CD, Documentação</li>
       </ul>
     </div>
   </div>
@@ -67,14 +83,55 @@
 <section id="skills" class="section alt">
   <div class="container">
     <h2>Skills</h2>
-    <div class="chips">
-      <span>AWS</span><span>Lambda</span><span>S3</span><span>CloudWatch</span>
-      <span>CloudFormation</span><span>Git</span><span>GitHub</span>
-      <span>Python</span><span>Markdown</span><span>CI/CD</span>
+    <div class="skills-grid">
+      <div class="skill">
+        <div class="skill-top"><span>AWS</span><small>Lambda • S3 • CloudWatch</small></div>
+        <div class="bar"><span style="width:80%"></span></div>
+      </div>
+      <div class="skill">
+        <div class="skill-top"><span>Python</span><small>Automação • Scripts</small></div>
+        <div class="bar"><span style="width:70%"></span></div>
+      </div>
+      <div class="skill">
+        <div class="skill-top"><span>Git & GitHub</span><small>Fluxo, Issues, PR</small></div>
+        <div class="bar"><span style="width:85%"></span></div>
+      </div>
+      <div class="skill">
+        <div class="skill-top"><span>CI/CD</span><small>Amplify • Actions</small></div>
+        <div class="bar"><span style="width:60%"></span></div>
+      </div>
     </div>
   </div>
 </section>
 
+<section id="destaques" class="section">
+  <div class="container">
+    <h2>Projetos em Destaque</h2>
+    <div class="cards">
+      <article class="card proj">
+        <h3>AWS Lambda + S3 Automation</h3>
+        <p>Função Lambda acionada por eventos do S3 com logs no CloudWatch. Projeto com documentação, evidências e templates GitHub.</p>
+        <div class="tags"><span>AWS</span><span>Python</span><span>Serverless</span></div>
+        <div class="actions">
+          <a class="btn small" target="_blank" rel="noopener" href="https://github.com/fiamaribeiro/aws-lambda-s3-automation">Repositório</a>
+        </div>
+      </article>
+
+      <!-- Substitua por outro destaque -->
+      <article class="card proj">
+        <h3>Portfólio no AWS Amplify</h3>
+        <p>Este site com CI/CD no Amplify, deploy automático a cada push e SEO básico.</p>
+        <div class="tags"><span>Amplify</span><span>HTML/CSS</span><span>CI/CD</span></div>
+        <div class="actions">
+          <a class="btn small" target="_blank" rel="noopener" href="https://github.com/fiamaribeiro/fiamaribeiro.github.io">Repositório</a>
+          <a class="btn small outline" target="_blank" rel="noopener" href="https://main.d36ae1suck745r.amplifyapp.com/">Live</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+  
 <section id="projetos" class="section">
   <div class="container">
     <h2>Projetos</h2>
