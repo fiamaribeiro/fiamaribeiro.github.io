@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Formação Lógica de Programação",
+    "issuer": "DIO",
+    "year": 2025,
+    "description": "Fundamentos de lógica, resolução de problemas, estruturas básicas e pensamento computacional aplicado.",
+    "tags": ["Lógica", "Algoritmos", "Fundamentos"],
+    "url": "https://hermes.dio.me/certificates/FK3FRTVI.pdf"
+  },
+  {
+    "title": "Santander Code Girls — 2025",
+    "issuer": "DIO • Santander",
+    "year": 2025,
+    "description": "Bootcamp concluído com projetos práticos: AWS, serverless, versionamento e documentação.",
+    "tags": ["AWS", "Serverless", "Git/GitHub"],
+    "url": "https://hermes.dio.me/certificates/RSJIFFUR.pdf"
+  }
+]
