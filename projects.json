@@ -1,99 +1,128 @@
 [
   {
-    "name": "Aws Cloudformation Project",
-    "type": "other",
-    "desc": "Infraestrutura como Código (IaC) na AWS com CloudFormation: VPC p��blica, S3 e EC2 opcional. Documentação + templates + prints do lab da DIO.",
-    "tech": [],
-    "thumb": "https://opengraph.githubassets.com/1/fiamaribeiro/aws-cloudformation-project",
-    "github": "https://github.com/fiamaribeiro/aws-cloudformation-project"
+    "name": "fiamaribeiro.github.io",
+    "description": "🌐 Meu portfólio online com projetos em Frontend, Backend, Automação e Power BI.",
+    "html_url": "https://github.com/fiamaribeiro/fiamaribeiro.github.io",
+    "homepage": "https://fiamaribeiro.github.io/",
+    "language": "HTML",
+    "stargazers_count": 0,
+    "pushed_at": "2025-09-28T01:50:47Z"
   },
   {
-    "name": "Classe Heroi",
-    "type": "other",
-    "desc": "",
-    "tech": [
-      "JavaScript"
-    ],
-    "thumb": "https://opengraph.githubassets.com/1/fiamaribeiro/classe-heroi",
-    "github": "https://github.com/fiamaribeiro/classe-heroi"
+    "name": "aws-lambda-s3-automation",
+    "description": "Automação serverless com AWS Lambda integrada ao S3 e monitorada pelo CloudWatch. Projeto final do Bootcamp DIO, incluindo templates, documentação e evidências.",
+    "html_url": "https://github.com/fiamaribeiro/aws-lambda-s3-automation",
+    "homepage": "https://fiamaribeiro.github.io/",
+    "language": "Python",
+    "stargazers_count": 0,
+    "pushed_at": "2025-09-22T23:39:02Z"
   },
   {
-    "name": "Dashboard Rh Powerbi",
-    "type": "data",
-    "desc": "📊 Dashboard de RH desenvolvido no Power BI — Contratações, Turnover, Distribuição e Horas Extras.",
-    "tech": [],
-    "thumb": "https://opengraph.githubassets.com/1/fiamaribeiro/dashboard-rh-powerbi",
-    "github": "https://github.com/fiamaribeiro/dashboard-rh-powerbi",
-    "demo": "https://fiamaribeiro.github.io"
+    "name": "aws-cloudformation-automated-infra",
+    "description": "Infraestrutura automatizada criada com AWS CloudFormation, como parte do desafio da DIO. Inclui documentação detalhada, prints das etapas e insights de aprendizado para servir como material de estudo.",
+    "html_url": "https://github.com/fiamaribeiro/aws-cloudformation-automated-infra",
+    "homepage": "https://fiamaribeiro.github.io/",
+    "language": "",
+    "stargazers_count": 0,
+    "pushed_at": "2025-09-22T11:43:20Z"
   },
   {
-    "name": "Dashboard Producao Powerbi",
-    "type": "data",
-    "desc": "⚙️ Dashboard de Produção em Power BI — Indicadores de produtividade, qualidade, horas produtivas e paradas.",
-    "tech": [],
-    "thumb": "https://opengraph.githubassets.com/1/fiamaribeiro/dashboard-producao-powerbi",
-    "github": "https://github.com/fiamaribeiro/dashboard-producao-powerbi",
-    "demo": "https://fiamaribeiro.github.io"
+    "name": "aws-cloudformation-project",
+    "description": "Infraestrutura como Código (IaC) na AWS com CloudFormation: VPC pública, S3 e EC2 opcional. Documentação + templates + prints do lab da DIO.",
+    "html_url": "https://github.com/fiamaribeiro/aws-cloudformation-project",
+    "homepage": "",
+    "language": "",
+    "stargazers_count": 0,
+    "pushed_at": "2025-09-21T23:11:11Z"
   },
   {
-    "name": "Calculadora Rankeadas Node",
-    "type": "other",
-    "desc": "",
-    "tech": [
-      "JavaScript"
-    ],
-    "thumb": "https://opengraph.githubassets.com/1/fiamaribeiro/calculadora-rankeadas-node",
-    "github": "https://github.com/fiamaribeiro/calculadora-rankeadas-node"
+    "name": "dio-aws-stepfunctions-lab-fiama",
+    "description": "Lab DIO | Orquestração serverless com AWS Step Functions (Lambda + DynamoDB + SNS) — valida, processa em paralelo, persiste e notifica.",
+    "html_url": "https://github.com/fiamaribeiro/dio-aws-stepfunctions-lab-fiama",
+    "homepage": "https://fiamaribeiro.github.io/",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "pushed_at": "2025-09-18T02:35:18Z"
   },
   {
-    "name": "Dio Lab Open Source",
-    "type": "other",
-    "desc": "Repositório do lab \"Contribuindo em um Projeto Open Source no GitHub\" da Digital Innovation One.",
-    "tech": [
-      "Jupyter Notebook"
-    ],
-    "thumb": "https://opengraph.githubassets.com/1/fiamaribeiro/dio-lab-open-source",
-    "github": "https://github.com/fiamaribeiro/dio-lab-open-source",
-    "demo": "https://digitalinnovationone.github.io/dio-lab-open-source/"
+    "name": "aws-ec2-lab",
+    "description": "Laboratório prático com EC2 na AWS: criação de instância, SG, Apache e Elastic IP",
+    "html_url": "https://github.com/fiamaribeiro/aws-ec2-lab",
+    "homepage": "https://fiamaribeiro.github.io/",
+    "language": "",
+    "stargazers_count": 0,
+    "pushed_at": "2025-09-14T14:35:44Z"
   },
   {
-    "name": "Dio Azure Speech Language",
-    "type": "other",
-    "desc": "Laboratório DIO – Azure Speech & Language (STT/TTS, Sentiment, Key Phrases, Language Detection)",
-    "tech": [],
-    "thumb": "https://opengraph.githubassets.com/1/fiamaribeiro/dio-azure-speech-language",
-    "github": "https://github.com/fiamaribeiro/dio-azure-speech-language"
+    "name": "dashboard-producao-powerbi",
+    "description": "⚙️ Dashboard de Produção em Power BI — Indicadores de produtividade, qualidade, horas produtivas e paradas.",
+    "html_url": "https://github.com/fiamaribeiro/dashboard-producao-powerbi",
+    "homepage": "https://fiamaribeiro.github.io",
+    "language": "",
+    "stargazers_count": 0,
+    "pushed_at": "2025-09-07T22:03:47Z"
   },
   {
-    "name": "Chatgpt Clone Node React",
-    "type": "other",
-    "desc": "Projeto de integração React + Node.js + OpenAI",
-    "tech": [
-      "JavaScript",
-      "CSS",
-      "HTML"
-    ],
-    "thumb": "https://opengraph.githubassets.com/1/fiamaribeiro/chatgpt-clone-node-react",
-    "github": "https://github.com/fiamaribeiro/chatgpt-clone-node-react"
+    "name": "dashboard-rh-powerbi",
+    "description": "📊 Dashboard de RH desenvolvido no Power BI — Contratações, Turnover, Distribuição e Horas Extras.",
+    "html_url": "https://github.com/fiamaribeiro/dashboard-rh-powerbi",
+    "homepage": "https://fiamaribeiro.github.io",
+    "language": "",
+    "stargazers_count": 0,
+    "pushed_at": "2025-09-07T21:44:09Z"
   },
   {
-    "name": "Dio Aws Stepfunctions Lab Fiama",
-    "type": "other",
-    "desc": "Lab DIO | Orquestração serverless com AWS Step Functions (Lambda + DynamoDB + SNS) — valida, processa em paralelo, persiste e notifica.",
-    "tech": [
-      "JavaScript"
-    ],
-    "thumb": "https://opengraph.githubassets.com/1/fiamaribeiro/dio-aws-stepfunctions-lab-fiama",
-    "github": "https://github.com/fiamaribeiro/dio-aws-stepfunctions-lab-fiama",
-    "demo": "https://fiamaribeiro.github.io/"
+    "name": "dio-azure-speech-language",
+    "description": "Laboratório DIO – Azure Speech & Language (STT/TTS, Sentiment, Key Phrases, Language Detection)",
+    "html_url": "https://github.com/fiamaribeiro/dio-azure-speech-language",
+    "homepage": "",
+    "language": "",
+    "stargazers_count": 0,
+    "pushed_at": "2025-09-01T00:32:07Z"
   },
   {
-    "name": "Aws Ec2 Lab",
-    "type": "other",
-    "desc": "Laboratório prático com EC2 na AWS: criação de instância, SG, Apache e Elastic IP",
-    "tech": [],
-    "thumb": "https://opengraph.githubassets.com/1/fiamaribeiro/aws-ec2-lab",
-    "github": "https://github.com/fiamaribeiro/aws-ec2-lab",
-    "demo": "https://fiamaribeiro.github.io/"
+    "name": "chatgpt-clone-node-react",
+    "description": "Projeto de integração React + Node.js + OpenAI",
+    "html_url": "https://github.com/fiamaribeiro/chatgpt-clone-node-react",
+    "homepage": "",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "pushed_at": "2025-06-22T20:44:33Z"
+  },
+  {
+    "name": "classe-heroi",
+    "description": "",
+    "html_url": "https://github.com/fiamaribeiro/classe-heroi",
+    "homepage": "",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "pushed_at": "2025-04-21T20:41:16Z"
+  },
+  {
+    "name": "calculadora-rankeadas-node",
+    "description": "",
+    "html_url": "https://github.com/fiamaribeiro/calculadora-rankeadas-node",
+    "homepage": "",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "pushed_at": "2025-04-12T15:40:02Z"
+  },
+  {
+    "name": "housing-map-salesforce",
+    "description": "O DreamHouse é um projeto desenvolvido no Salesforce utilizando Lightning Web Components (LWC) para criar uma interface interativa e intuitiva de gerenciamento e mapeamento de imóveis. Este projeto visa demonstrar o poder da plataforma Salesforce e suas ferramentas modernas para criar soluções personalizadas e eficientes.",
+    "html_url": "https://github.com/fiamaribeiro/housing-map-salesforce",
+    "homepage": "",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "pushed_at": "2025-01-20T23:37:03Z"
+  },
+  {
+    "name": "desafio-felipao-dio",
+    "description": "Desafio do Felipão -  DIO",
+    "html_url": "https://github.com/fiamaribeiro/desafio-felipao-dio",
+    "homepage": "",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "pushed_at": "2025-01-16T22:55:11Z"
   }
 ]
