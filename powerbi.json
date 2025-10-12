@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Dashboard de Produção (KPI Geral)",
+    "desc": "Produção mensal, % qualidade, horas produtivas e paradas.",
+    "src": "https://app.powerbi.com/view?r=eyJrIjoiNDBmYTI3OTEtMmFhZi00OTE3LThmYjQtMjEzNzJhYzU2NTg1IiwidCI6ImZjNWY4YTA1LWE0NDAtNDIyOC1hYzg0LWE4MjUwMTU0YzFmMCJ9",
+    "featured": true
+  },
+  {
+    "title": "Vendas — Visão Comercial",
+    "desc": "Ticket médio, YoY, top categorias.",
+    "src": "https://app.powerbi.com/view?r=COLE_AQUI_O_OUTRO_LINK",
+    "featured": false
+  }
+]
