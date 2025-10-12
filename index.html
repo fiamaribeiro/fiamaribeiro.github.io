@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 <header class="nav">
   <div class="container nav-inner">
@@ -20,12 +21,14 @@
       <a href="#destaques">Destaques</a>
       <a href="#powerbi">Power BI</a>
       <a href="#projetos">Projetos</a>
+      <a href="#repos">Repositórios</a>
       <a href="#contato" class="btn">Contato</a>
       <button id="themeToggle" aria-label="Alternar tema" class="theme-btn">🌙</button>
     </nav>
   </div>
 </header>
 
+<!-- HERO -->
 <section id="hero" class="hero">
   <div class="container hero-inner">
     <div class="hero-text">
@@ -62,6 +65,7 @@
   </div>
 </section>
 
+<!-- SOBRE -->
 <section id="sobre" class="section">
   <div class="container grid-2">
     <div>
@@ -90,6 +94,7 @@
   </div>
 </section>
 
+<!-- SKILLS -->
 <section id="skills" class="section alt">
   <div class="container">
     <h2>Skills</h2>
@@ -102,6 +107,7 @@
   </div>
 </section>
 
+<!-- DESTAQUES -->
 <section id="destaques" class="section">
   <div class="container">
     <h2>Projetos em Destaque</h2>
@@ -129,11 +135,11 @@
   </div>
 </section>
 
+<!-- POWER BI -->
 <section id="powerbi" class="section">
   <div class="container">
     <h2>Power BI — dashboards interativos</h2>
     <p class="muted">Amostra em destaque. Mais cases na seção de Projetos.</p>
-
     <article class="card bi-card">
       <h3>Dashboard de Produção (KPI Geral)</h3>
       <p class="muted">Produção mensal, % qualidade, horas produtivas e paradas.</p>
@@ -147,6 +153,7 @@
   </div>
 </section>
 
+<!-- PROJETOS CURADOS -->
 <section id="projetos" class="section">
   <div class="container">
     <h2>Projetos</h2>
@@ -155,15 +162,13 @@
   </div>
 </section>
 
-<!-- ===== TODOS OS REPOSITÓRIOS (auto do GitHub) ===== -->
+<!-- TODOS OS REPOSITÓRIOS (GitHub API) -->
 <section id="repos" class="section">
   <div class="container">
     <h2>Todos os repositórios</h2>
     <p class="muted" style="margin-top:-6px">
       Lista automática dos meus repositórios públicos no GitHub (atualiza sozinha).
     </p>
-
-    <!-- Controles -->
     <div class="repo-controls">
       <input id="repo-search" type="search" placeholder="Buscar por nome/descrição…" aria-label="Buscar repositórios">
       <label class="chk"><input id="repo-forks" type="checkbox"> mostrar forks</label>
@@ -174,13 +179,12 @@
         <option value="full_name">Ordenar: Nome</option>
       </select>
     </div>
-
     <div id="gh-grid" class="cards"></div>
     <p id="gh-msg" class="muted" style="margin-top:10px"></p>
   </div>
 </section>
 
-  
+<!-- CONTATO -->
 <section id="contato" class="section">
   <div class="container grid-2">
     <div>
@@ -207,12 +211,9 @@
       <label>Mensagem
         <textarea name="message" rows="4" placeholder="Como posso ajudar?" required></textarea>
       </label>
-
-      <!-- Honeypot -->
       <label class="hp">Não preencha isto
         <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
       </label>
-
       <button class="btn primary" type="submit">Enviar</button>
       <p id="form-status" class="muted" aria-live="polite"></p>
     </form>
