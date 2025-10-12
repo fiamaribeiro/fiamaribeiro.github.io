@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfólio • Fiama Ribeiro</title>
-  <meta name="description" content="Portfólio de Fiama Ribeiro — Gestão de T.I., Cloud/AWS, projetos e certificações.">
+  <title>Fiama Ribeiro — Cloud, Automação & Power BI</title>
+  <meta name="description" content="Portfólio de Fiama Ribeiro — Cloud/AWS, automações, dados e dashboards Power BI. Disponível para oportunidades.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -17,10 +17,11 @@
     <nav>
       <a href="#sobre">Sobre</a>
       <a href="#skills">Skills</a>
+      <a href="#destaques">Destaques</a>
+      <a href="#powerbi">Power BI</a>
       <a href="#projetos">Projetos</a>
-      <a href="#certificados">Certificados</a>
       <a href="#contato" class="btn">Contato</a>
-      <button id="themeToggle" aria-label="Alternar tema">🌓</button>
+      <button id="themeToggle" aria-label="Alternar tema" class="theme-btn">🌙</button>
     </nav>
   </div>
 </header>
@@ -31,31 +32,26 @@
       <div class="avatar-and-brand">
         <img class="avatar" src="assets/avatar-fiama.jpg" alt="Foto de perfil de Fiama Ribeiro">
         <div>
-          <h1>Olá, eu sou a <span>Fiama</span> 👋</h1>
-          <p>Estudante de <strong>Gestão de T.I.</strong> e <strong>Auxiliar de Contratos</strong> na Contrei. Apaixonada por <strong>Cloud/AWS</strong>, automação e documentação técnica.</p>
+          <h1>Cloud, Automação & Dashboards<br><span>para gerar resultado</span></h1>
+          <p>Sou <strong>Fiama Ribeiro</strong>, estudante de Gestão de T.I. e profissional de tecnologia focada em <strong>AWS/Serverless</strong>, <strong>automações</strong> e <strong>Power BI</strong>. Construo soluções simples, seguras e mensuráveis — do back à visualização.</p>
+          <div class="hero-ctas">
+            <a href="#destaques" class="btn primary">Ver soluções</a>
+            <a href="#contato" class="btn outline">Fale comigo</a>
+          </div>
+          <div class="social-row">
+            <a class="social" href="mailto:fiama.ribeiro@fiama.tech" aria-label="Email">📧 Email</a>
+            <a class="social" href="https://www.linkedin.com/in/fiama-ribeiro-costa" target="_blank" rel="noopener" aria-label="LinkedIn">💼 LinkedIn</a>
+            <a class="social" href="https://github.com/fiamaribeiro" target="_blank" rel="noopener" aria-label="GitHub">🐙 GitHub</a>
+          </div>
+          <div class="badges">
+            <span class="badge">AWS • Lambda • S3 • CloudWatch</span>
+            <span class="badge">Python & Automação</span>
+            <span class="badge">Power BI</span>
+            <span class="badge">CI/CD</span>
+          </div>
         </div>
       </div>
-
-      <div class="social-row">
-        <a class="social" href="mailto:SEU-EMAIL-AQUI" target="_blank" rel="noopener" aria-label="Email">📧 Email</a>
-        <a class="social" href="https://www.linkedin.com/in/fiama-ribeiro-costa" target="_blank" rel="noopener" aria-label="LinkedIn">💼 LinkedIn</a>
-        <a class="social" href="https://github.com/fiamaribeiro" target="_blank" rel="noopener" aria-label="GitHub">🐙 GitHub</a>
-      </div>
-
-      <div class="hero-ctas">
-        <a href="#destaques" class="btn primary">Projetos em Destaque</a>
-        <a href="#projetos" class="btn outline">Todos os Projetos</a>
-      </div>
-
-      <div class="badges">
-        <span class="badge">AWS • Lambda • S3 • CloudWatch</span>
-        <span class="badge">Git & GitHub</span>
-        <span class="badge">Python</span>
-        <span class="badge">Serverless</span>
-        <span class="badge">CI/CD</span>
-      </div>
     </div>
-
     <div class="hero-art">
       <img src="assets/hero-placeholder.svg" alt="Ilustração de nuvem/AWS">
     </div>
@@ -66,15 +62,21 @@
   <div class="container grid-2">
     <div>
       <h2>Sobre</h2>
-      <p>Sou a Fiama, construindo carreira em <strong>Cloud</strong> e <strong>automação</strong>, com base sólida em boas práticas, documentação clara e repositórios organizados. Curto transformar aprendizado em projetos reais — como o lab de <strong>Lambda + S3 + CloudWatch</strong> do bootcamp.</p>
-      <p>Hoje estudo <strong>Gestão de T.I.</strong> e atuo como <strong>Auxiliar de Contratos</strong> na Contrei. Busco oportunidades para aplicar minha visão prática, colaboração e foco em resultados.</p>
-    </div>
-    <div class="card facts">
-      <ul>
+      <p>Atuo com foco em <strong>Cloud/Serverless</strong>, <strong>automação de processos</strong> e <strong>dados</strong>. Minha pegada é pragmática: evidência, documentação e entrega. Converso bem com times de <strong>Desenvolvimento</strong> e <strong>RH</strong> — unindo técnica e comunicação.</p>
+      <ul class="bullets">
         <li>🎓 Gestão de T.I. — Anhanguera</li>
         <li>💼 Auxiliar de Contratos — Contrei</li>
-        <li>🌩️ Favoritos: AWS (Lambda, S3, CloudWatch)</li>
-        <li>🧩 Interesses: Serverless, CI/CD, Documentação</li>
+        <li>🌩️ Stack favorita: AWS (Lambda, S3, CloudWatch)</li>
+        <li>📊 Dashboards e storytelling com Power BI</li>
+      </ul>
+    </div>
+    <div class="card facts">
+      <h3>O que entrego para sua empresa</h3>
+      <ul>
+        <li>Automação de tarefas repetitivas (↑ produtividade)</li>
+        <li>Orquestrações serverless confiáveis (↓ custos)</li>
+        <li>Dashboards com KPIs claros p/ liderança</li>
+        <li>Documentação e handoff prontos para time</li>
       </ul>
     </div>
   </div>
@@ -84,22 +86,10 @@
   <div class="container">
     <h2>Skills</h2>
     <div class="skills-grid">
-      <div class="skill">
-        <div class="skill-top"><span>AWS</span><small>Lambda • S3 • CloudWatch</small></div>
-        <div class="bar"><span style="width:80%"></span></div>
-      </div>
-      <div class="skill">
-        <div class="skill-top"><span>Python</span><small>Automação • Scripts</small></div>
-        <div class="bar"><span style="width:70%"></span></div>
-      </div>
-      <div class="skill">
-        <div class="skill-top"><span>Git & GitHub</span><small>Fluxo, Issues, PR</small></div>
-        <div class="bar"><span style="width:85%"></span></div>
-      </div>
-      <div class="skill">
-        <div class="skill-top"><span>CI/CD</span><small>Amplify • Actions</small></div>
-        <div class="bar"><span style="width:60%"></span></div>
-      </div>
+      <div class="skill"><div class="skill-top"><span>AWS</span><small>Lambda • S3 • CloudWatch</small></div><div class="bar"><span style="width:80%"></span></div></div>
+      <div class="skill"><div class="skill-top"><span>Python</span><small>Automação • Scripts</small></div><div class="bar"><span style="width:70%"></span></div></div>
+      <div class="skill"><div class="skill-top"><span>Git & GitHub</span><small>Fluxo, Issues, PR</small></div><div class="bar"><span style="width:85%"></span></div></div>
+      <div class="skill"><div class="skill-top"><span>Power BI</span><small>DAX • Modelagem</small></div><div class="bar"><span style="width:75%"></span></div></div>
     </div>
   </div>
 </section>
@@ -116,105 +106,74 @@
           <a class="btn small" target="_blank" rel="noopener" href="https://github.com/fiamaribeiro/aws-lambda-s3-automation">Repositório</a>
         </div>
       </article>
-
-      <!-- Substitua por outro destaque -->
       <article class="card proj">
-        <h3>Portfólio no AWS Amplify</h3>
-        <p>Este site com CI/CD no Amplify, deploy automático a cada push e SEO básico.</p>
-        <div class="tags"><span>Amplify</span><span>HTML/CSS</span><span>CI/CD</span></div>
+        <h3>Portfólio com CI/CD</h3>
+        <p>Site com deploy automático a cada push e SEO básico. Integração com domínio <strong>fiama.tech</strong>.</p>
+        <div class="tags"><span>GitHub Pages</span><span>CI/CD</span></div>
         <div class="actions">
           <a class="btn small" target="_blank" rel="noopener" href="https://github.com/fiamaribeiro/fiamaribeiro.github.io">Repositório</a>
-          <a class="btn small outline" target="_blank" rel="noopener" href="https://main.d36ae1suck745r.amplifyapp.com/">Live</a>
         </div>
       </article>
     </div>
   </div>
 </section>
 
-  
+<!-- POWER BI: área dinâmica (carrega do powerbi.json) -->
+<section id="powerbi" class="section">
+  <div class="container">
+    <h2>Power BI — dashboards interativos</h2>
+    <p class="muted">Alguns dos meus painéis publicados na Web. Clique para abrir em tela cheia.</p>
+
+    <!-- Destaque (primeiro item com "featured": true no powerbi.json) -->
+    <div id="bi-featured"></div>
+
+    <!-- Demais cards -->
+    <div id="bi-grid" class="cards"></div>
+  </div>
+</section>
+
 <section id="projetos" class="section">
   <div class="container">
     <h2>Projetos</h2>
-      <div id="repo-grid" class="cards"></div>
+    <div id="repo-grid" class="cards"></div>
   </div>
 </section>
-
-<section id="certificados" class="section alt">
-  <div class="container">
-    <h2>Certificados</h2>
-    <p style="color: var(--muted); margin-top:-6px;">
-     
-    </p>
-
-    <div class="certs-grid">
-      <!-- Formação Lógica (DIO) -->
-      <article class="card cert">
-        <div class="cert-head">
-          <h3>Formação Lógica de Programação</h3>
-          <span class="issuer">DIO</span>
-        </div>
-        <p>Fundamentos de lógica, resolução de problemas, estruturas básicas e pensamento computacional aplicado.</p>
-        <div class="tags">
-          <span>Lógica</span><span>Algoritmos</span><span>Fundamentos</span>
-        </div>
-        <div class="actions">
-          <a class="btn small" target="_blank" rel="noopener" href="https://hermes.dio.me/certificates/FK3FRTVI.pdf">Ver certificado</a>
-        </div>
-      </article>
-
-      <!-- Santander Code Girls -->
-      <article class="card cert">
-        <div class="cert-head">
-          <h3>Santander Code Girls — 2025</h3>
-          <span class="issuer">DIO • Santander</span>
-        </div>
-        <p>Bootcamp concluído com projetos práticos: AWS, serverless, versionamento e documentação.</p>
-        <div class="tags">
-          <span>AWS</span><span>Serverless</span><span>Git/GitHub</span>
-        </div>
-        <div class="actions">
-          <a class="btn small" target="_blank" rel="noopener" href="https://hermes.dio.me/certificates/RSJIFFUR.pdf">Ver certificado</a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
 
 <section id="contato" class="section">
   <div class="container grid-2">
     <div>
       <h2>Contato</h2>
-      <p>Curtiu meu trabalho? Vamos conversar! Estou aberta a colaborações, oportunidades e novos desafios.</p>
+      <p>Se você é de <strong>RH</strong> ou <strong>Tech</strong> e quer conversar sobre oportunidades, me envie uma mensagem. Retorno em até 24h úteis.</p>
       <ul class="contact">
-        <li>📧 <a href="mailto:contato@exemplo.com">fiamaribeiro@outlook.com</a></li>
-        <li>💼 <a href="https://www.linkedin.com/in/fiama-ribeiro-costa/" target="_blank" rel="noopener">www.linkedin.com/in/fiama-ribeiro-costa</a></li>
+        <li>📧 <a href="mailto:fiama.ribeiro@fiama.tech">fiama.ribeiro@fiama.tech</a></li>
+        <li>💼 <a href="https://www.linkedin.com/in/fiama-ribeiro-costa/" target="_blank" rel="noopener">LinkedIn</a></li>
         <li>🐙 <a href="https://github.com/fiamaribeiro" target="_blank" rel="noopener">GitHub</a></li>
       </ul>
     </div>
-    <form class="card form" onsubmit="return false">
+
+    <!-- Formulário com envio real via Formspree -->
+    <form id="contact-form" class="card form" action="https://formspree.io/f/SEU_ENDPOINT" method="POST">
       <label>Nome
-        <input type="text" placeholder="Seu nome">
+        <input name="name" type="text" placeholder="Seu nome" required>
       </label>
       <label>Email
-        <input type="email" placeholder="seu@email.com">
+        <input name="email" type="email" placeholder="seu@email.com" required>
       </label>
       <label>Mensagem
-        <textarea rows="4" placeholder="Como posso ajudar?"></textarea>
+        <textarea name="message" rows="4" placeholder="Como posso ajudar?" required></textarea>
       </label>
-      <button class="btn primary" onclick="alert('Obrigada pela mensagem! Para contato real, use meu LinkedIn ou email 😊')">Enviar</button>
+      <button class="btn primary" type="submit">Enviar</button>
+      <p id="form-status" class="muted" aria-live="polite"></p>
     </form>
   </div>
 </section>
 
 <footer class="footer">
   <div class="container">
-    <p>© <span id="year"></span> Fiama Ribeiro — Feito com AWS Amplify</p>
+    <p>© <span id="year"></span> Fiama Ribeiro — fiama.tech</p>
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="scripts/script.js"></script>
 </body>
 </html>
-
-<script src="scripts/script.js"></script>
