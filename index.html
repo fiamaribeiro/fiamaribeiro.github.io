@@ -152,19 +152,34 @@
     </div>
 
     <!-- Formulário com envio real via Formspree -->
-    <form id="contact-form" class="card form" action="https://formspree.io/f/SEU_ENDPOINT" method="POST">
-      <label>Nome
-        <input name="name" type="text" placeholder="Seu nome" required>
-      </label>
-      <label>Email
-        <input name="email" type="email" placeholder="seu@email.com" required>
-      </label>
-      <label>Mensagem
-        <textarea name="message" rows="4" placeholder="Como posso ajudar?" required></textarea>
-      </label>
-      <button class="btn primary" type="submit">Enviar</button>
-      <p id="form-status" class="muted" aria-live="polite"></p>
-    </form>
+   <form
+  id="contact-form"
+  class="card form"
+  action="https://formspree.io/f/myznbyoy"
+  method="POST">
+  
+  <input type="hidden" name="_subject" value="Contato pelo site fiama.tech">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_redirect" value="https://fiama.tech/#contato?enviado=1">
+  
+  <label>Nome
+    <input name="name" type="text" placeholder="Seu nome" required>
+  </label>
+  <label>Email
+    <input name="_replyto" type="email" placeholder="seu@email.com" required>
+  </label>
+  <label>Mensagem
+    <textarea name="message" rows="4" placeholder="Como posso ajudar?" required></textarea>
+  </label>
+
+  <label style="position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden;">
+    Não preencha isto
+    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+  </label>
+
+  <button class="btn primary" type="submit">Enviar</button>
+  <p id="form-status" class="muted" aria-live="polite"></p>
+</form>
   </div>
 </section>
 
