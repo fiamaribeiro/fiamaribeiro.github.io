@@ -17,49 +17,41 @@
 })();
 
 // ===== Ano no rodapé
-document.getElementById("year") && (document.getElementById("year").textContent = new Date().getFullYear());
+const y = document.getElementById("year");
+if (y) y.textContent = new Date().getFullYear();
 
-// ===== Power BI dinâmico (carrega de powerbi.json)
-(async function loadBI(){
+// ===== Projetos: cards resumidos (fonte: projects.json)
+(async function loadProjects(){
+  const container = document.getElementById("repo-grid");
+  if(!container) return;
   try{
-    const res = await fetch("powerbi.json", { cache: "no-store" });
-    if(!res.ok) return;
-    const data = await res.json(); // [{title, src, desc, featured, tags}]
-    const featured = data.find(d => d.featured);
-    const others = data.filter(d => !d.featured);
-    const featuredEl = document.getElementById("bi-featured");
-    const gridEl = document.getElementById("bi-grid");
+    const res = await fetch("projects.json", { cache: "no-store" });
+    const items = await res.json();
 
-    if (featured && featuredEl){
-      featuredEl.innerHTML = `
-        <article class="card bi-card">
-          <h3>${featured.title}</h3>
-          <p class="muted">${featured.desc || ""}</p>
-          <div class="bi-embed">
-            <iframe title="${featured.title}" src="${featured.src}" allowfullscreen="true"></iframe>
-          </div>
-        </article>`;
-    }
-
-    if (gridEl){
-      gridEl.innerHTML = others.map(o => `
-        <article class="card bi-card">
-          <h3>${o.title}</h3>
-          <p class="muted">${o.desc || ""}</p>
-          <div class="bi-embed">
-            <iframe title="${o.title}" src="${o.src}" allowfullscreen="true"></iframe>
-          </div>
-        </article>
-      `).join("");
-    }
-  }catch(e){ console.warn("Power BI load error:", e); }
+    container.innerHTML = items.map(p => `
+      <article class="card proj">
+        <img src="${p.thumb || 'assets/thumbs/placeholder.jpg'}" alt="${p.title}" class="thumb">
+        <h3>${p.title}</h3>
+        <p>${p.summary}</p>
+        <div class="meta">${(p.tags||[]).map(t=>`<span>${t}</span>`).join('')}</div>
+        <div class="actions">
+          <a class="btn small" href="${p.case}">Ver case completo</a>
+          ${p.repo ? `<a class="btn small outline" target="_blank" rel="noopener" href="${p.repo}">Repositório</a>` : ``}
+        </div>
+      </article>
+    `).join("");
+  }catch(e){
+    console.warn("Falha ao carregar projects.json", e);
+    container.innerHTML = `<p class="muted">Não foi possível carregar os projetos agora.</p>`;
+  }
 })();
 
-// ===== Formulário: envio real via Formspree
+// ===== Formulário: envio real via Formspree (progressive enhancement)
 (function initForm(){
   const form = document.getElementById("contact-form");
   if(!form) return;
   const status = document.getElementById("form-status");
+
   form.addEventListener("submit", async (e)=>{
     e.preventDefault();
     const data = new FormData(form);
