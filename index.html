@@ -155,6 +155,32 @@
   </div>
 </section>
 
+<!-- ===== TODOS OS REPOSITÓRIOS (auto do GitHub) ===== -->
+<section id="repos" class="section">
+  <div class="container">
+    <h2>Todos os repositórios</h2>
+    <p class="muted" style="margin-top:-6px">
+      Lista automática dos meus repositórios públicos no GitHub (atualiza sozinha).
+    </p>
+
+    <!-- Controles -->
+    <div class="repo-controls">
+      <input id="repo-search" type="search" placeholder="Buscar por nome/descrição…" aria-label="Buscar repositórios">
+      <label class="chk"><input id="repo-forks" type="checkbox"> mostrar forks</label>
+      <select id="repo-sort" aria-label="Ordenar">
+        <option value="updated">Ordenar: Atualizados</option>
+        <option value="pushed">Ordenar: Último push</option>
+        <option value="created">Ordenar: Criados</option>
+        <option value="full_name">Ordenar: Nome</option>
+      </select>
+    </div>
+
+    <div id="gh-grid" class="cards"></div>
+    <p id="gh-msg" class="muted" style="margin-top:10px"></p>
+  </div>
+</section>
+
+  
 <section id="contato" class="section">
   <div class="container grid-2">
     <div>
