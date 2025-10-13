@@ -1,20 +1,128 @@
 [
   {
-    "slug": "aws-lambda-s3",
-    "title": "AWS Lambda + S3 Automation",
-    "summary": "Processos automáticos ao subir arquivos no S3, com logs no CloudWatch.",
-    "tags": ["AWS", "Python", "Serverless"],
-    "repo": "https://github.com/fiamaribeiro/aws-lambda-s3-automation",
-    "case": "/projetos/aws-lambda-s3.html",
-    "thumb": "assets/thumbs/lambda-s3.jpg"
+    "name": "fiamaribeiro.github.io",
+    "description": "🌐 Meu portfólio online com projetos em Frontend, Backend, Automação e Power BI.",
+    "html_url": "https://github.com/fiamaribeiro/fiamaribeiro.github.io",
+    "homepage": "https://fiamaribeiro.github.io/",
+    "language": "HTML",
+    "stargazers_count": 0,
+    "pushed_at": "2025-10-12T22:28:26Z"
   },
   {
-    "slug": "powerbi-producao",
-    "title": "Power BI — Dashboard de Produção",
-    "summary": "KPIs de produção, qualidade e horas produtivas com filtros.",
-    "tags": ["Power BI", "DAX", "Modelagem"],
-    "repo": "https://github.com/fiamaribeiro",
-    "case": "/projetos/powerbi-producao.html",
-    "thumb": "assets/thumbs/powerbi-producao.jpg"
+    "name": "aws-lambda-s3-automation",
+    "description": "Automação serverless com AWS Lambda integrada ao S3 e monitorada pelo CloudWatch. Projeto final do Bootcamp DIO, incluindo templates, documentação e evidências.",
+    "html_url": "https://github.com/fiamaribeiro/aws-lambda-s3-automation",
+    "homepage": "https://fiamaribeiro.github.io/",
+    "language": "Python",
+    "stargazers_count": 0,
+    "pushed_at": "2025-09-22T23:39:02Z"
+  },
+  {
+    "name": "aws-cloudformation-automated-infra",
+    "description": "Infraestrutura automatizada criada com AWS CloudFormation, como parte do desafio da DIO. Inclui documentação detalhada, prints das etapas e insights de aprendizado para servir como material de estudo.",
+    "html_url": "https://github.com/fiamaribeiro/aws-cloudformation-automated-infra",
+    "homepage": "https://fiamaribeiro.github.io/",
+    "language": "",
+    "stargazers_count": 0,
+    "pushed_at": "2025-09-22T11:43:20Z"
+  },
+  {
+    "name": "aws-cloudformation-project",
+    "description": "Infraestrutura como Código (IaC) na AWS com CloudFormation: VPC p��blica, S3 e EC2 opcional. Documentação + templates + prints do lab da DIO.",
+    "html_url": "https://github.com/fiamaribeiro/aws-cloudformation-project",
+    "homepage": "",
+    "language": "",
+    "stargazers_count": 0,
+    "pushed_at": "2025-09-21T23:11:11Z"
+  },
+  {
+    "name": "dio-aws-stepfunctions-lab-fiama",
+    "description": "Lab DIO | Orquestração serverless com AWS Step Functions (Lambda + DynamoDB + SNS) — valida, processa em paralelo, persiste e notifica.",
+    "html_url": "https://github.com/fiamaribeiro/dio-aws-stepfunctions-lab-fiama",
+    "homepage": "https://fiamaribeiro.github.io/",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "pushed_at": "2025-09-18T02:35:18Z"
+  },
+  {
+    "name": "aws-ec2-lab",
+    "description": "Laboratório prático com EC2 na AWS: criação de instância, SG, Apache e Elastic IP",
+    "html_url": "https://github.com/fiamaribeiro/aws-ec2-lab",
+    "homepage": "https://fiamaribeiro.github.io/",
+    "language": "",
+    "stargazers_count": 0,
+    "pushed_at": "2025-09-14T14:35:44Z"
+  },
+  {
+    "name": "dashboard-producao-powerbi",
+    "description": "⚙️ Dashboard de Produção em Power BI — Indicadores de produtividade, qualidade, horas produtivas e paradas.",
+    "html_url": "https://github.com/fiamaribeiro/dashboard-producao-powerbi",
+    "homepage": "https://fiamaribeiro.github.io",
+    "language": "",
+    "stargazers_count": 0,
+    "pushed_at": "2025-09-07T22:03:47Z"
+  },
+  {
+    "name": "dashboard-rh-powerbi",
+    "description": "📊 Dashboard de RH desenvolvido no Power BI — Contratações, Turnover, Distribuição e Horas Extras.",
+    "html_url": "https://github.com/fiamaribeiro/dashboard-rh-powerbi",
+    "homepage": "https://fiamaribeiro.github.io",
+    "language": "",
+    "stargazers_count": 0,
+    "pushed_at": "2025-09-07T21:44:09Z"
+  },
+  {
+    "name": "dio-azure-speech-language",
+    "description": "Laboratório DIO – Azure Speech & Language (STT/TTS, Sentiment, Key Phrases, Language Detection)",
+    "html_url": "https://github.com/fiamaribeiro/dio-azure-speech-language",
+    "homepage": "",
+    "language": "",
+    "stargazers_count": 0,
+    "pushed_at": "2025-09-01T00:32:07Z"
+  },
+  {
+    "name": "chatgpt-clone-node-react",
+    "description": "Projeto de integração React + Node.js + OpenAI",
+    "html_url": "https://github.com/fiamaribeiro/chatgpt-clone-node-react",
+    "homepage": "",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "pushed_at": "2025-06-22T20:44:33Z"
+  },
+  {
+    "name": "classe-heroi",
+    "description": "",
+    "html_url": "https://github.com/fiamaribeiro/classe-heroi",
+    "homepage": "",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "pushed_at": "2025-04-21T20:41:16Z"
+  },
+  {
+    "name": "calculadora-rankeadas-node",
+    "description": "",
+    "html_url": "https://github.com/fiamaribeiro/calculadora-rankeadas-node",
+    "homepage": "",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "pushed_at": "2025-04-12T15:40:02Z"
+  },
+  {
+    "name": "housing-map-salesforce",
+    "description": "O DreamHouse é um projeto desenvolvido no Salesforce utilizando Lightning Web Components (LWC) para criar uma interface interativa e intuitiva de gerenciamento e mapeamento de imóveis. Este projeto visa demonstrar o poder da plataforma Salesforce e suas ferramentas modernas para criar soluções personalizadas e eficientes.",
+    "html_url": "https://github.com/fiamaribeiro/housing-map-salesforce",
+    "homepage": "",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "pushed_at": "2025-01-20T23:37:03Z"
+  },
+  {
+    "name": "desafio-felipao-dio",
+    "description": "Desafio do Felipão -  DIO",
+    "html_url": "https://github.com/fiamaribeiro/desafio-felipao-dio",
+    "homepage": "",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "pushed_at": "2025-01-16T22:55:11Z"
   }
 ]
