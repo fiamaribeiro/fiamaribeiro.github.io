@@ -20,31 +20,6 @@
 const y = document.getElementById("year");
 if (y) y.textContent = new Date().getFullYear();
 
-// ===== Certificados: cards (fonte: certificates.json)
-(async function loadCerts(){
-  const container = document.getElementById("cert-grid");
-  if(!container) return;
-  try{
-    const res = await fetch("certificates.json", { cache: "no-store" });
-    const items = await res.json();
-
-    container.innerHTML = items.map(c => `
-      <article class="card">
-        <h3>${c.title}</h3>
-        <p><strong>${c.issuer}</strong>, ${c.year}</p>
-        <p>${c.description}</p>
-        <div class="meta">${(c.tags||[]).map(t=>`<span>${t}</span>`).join('')}</div>
-        <div class="actions">
-          <a class="btn small" target="_blank" rel="noopener" href="${c.url}">Ver credencial</a>
-        </div>
-      </article>
-    `).join("");
-  }catch(e){
-    console.warn("Falha ao carregar certificates.json", e);
-    container.innerHTML = `<p class="muted">Não foi possível carregar os certificados agora.</p>`;
-  }
-})();
-
 // ===== Projetos: cards resumidos (fonte: projects.json)
 (async function loadProjects(){
   const container = document.getElementById("repo-grid");
