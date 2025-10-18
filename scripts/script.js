@@ -22,7 +22,7 @@ if (y) y.textContent = new Date().getFullYear();
 
 // ===== Projetos: cards resumidos (fonte: projects.json)
 (async function loadProjects(){
-  const container = document.getElementById("repo-grid");
+  const container = document.getElementById("projects-grid");
   if(!container) return;
   try{
     const res = await fetch("projects.json", { cache: "no-store" });
