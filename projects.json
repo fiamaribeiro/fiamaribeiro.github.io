@@ -1,18 +1,26 @@
 [
   {
-    "title": "AWS Lambda + S3 Automation",
-    "summary": "Função Lambda acionada por eventos do S3, com logs no CloudWatch e automação de uploads.",
+    "titulo": "AWS Lambda + S3 Automation",
+    "descricao": "Função Lambda acionada por eventos do S3, com logs no CloudWatch e automação de uploads.",
     "tags": ["AWS", "Python", "Serverless"],
-    "repo": "https://github.com/fiamaribeiro/aws-lambda-s3-automation",
-    "case": "/projetos/aws-lambda-s3.html",
-    "thumb": "assets/thumbs/lambda-s3.jpg"
+    "imagem": "assets/thumbs/lambda-s3.jpg",
+    "linkCase": "projetos/aws-lambda-s3.html",
+    "linkRepo": "https://github.com/fiamaribeiro/aws-lambda-s3-automation"
   },
   {
-    "title": "Power BI — Dashboard de Produção",
-    "summary": "KPIs de produção, qualidade e horas produtivas.",
+    "titulo": "Power BI — Dashboard de Produção",
+    "descricao": "Dashboard com KPIs de produção, qualidade e disponibilidade, filtráveis por período e operador.",
     "tags": ["Power BI", "DAX", "Modelagem"],
-    "case": "/projetos/powerbi-producao.html",
-    "thumb": "assets/thumbs/powerbi-producao.jpg",
-    "repo": null
+    "imagem": "assets/thumbs/powerbi-producao.jpg",
+    "linkCase": "projetos/powerbi-producao.html",
+    "linkRepo": "https://github.com/fiamaribeiro"
+  },
+  {
+    "titulo": "Portfólio com CI/CD no AWS Amplify",
+    "descricao": "Este próprio site, com deploy automatizado via Amplify e integração GitHub Actions.",
+    "tags": ["Amplify", "HTML/CSS", "CI/CD"],
+    "imagem": "assets/thumbs/portfolio-amplify.jpg",
+    "linkCase": "#",
+    "linkRepo": "https://github.com/fiamaribeiro/fiamaribeiro.github.io"
   }
 ]
