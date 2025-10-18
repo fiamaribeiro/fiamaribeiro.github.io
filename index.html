@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Fiama Ribeiro — Cloud, Automação & Power BI</title>
   <meta name="description" content="Portfólio de Fiama Ribeiro — Cloud/AWS, automações, dados e dashboards Power BI. Disponível para oportunidades." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -20,7 +21,6 @@
       <a href="#skills">Skills</a>
       <a href="#destaques">Destaques</a>
       <a href="#powerbi">Power BI</a>
-      <a href="#projetos">Projetos</a>
       <a href="#repos">Repositórios</a>
       <a href="#contato" class="btn">Contato</a>
       <button id="themeToggle" aria-label="Alternar tema" class="theme-btn">🌙</button>
@@ -107,31 +107,12 @@
   </div>
 </section>
 
-<!-- DESTAQUES -->
+<!-- PROJETOS EM DESTAQUE -->
 <section id="destaques" class="section">
   <div class="container">
     <h2>Projetos em Destaque</h2>
-    <div class="cards">
-      <article class="card proj">
-        <img src="assets/thumbs/lambda-s3.jpg" alt="Lambda + S3" class="thumb">
-        <h3>AWS Lambda + S3 Automation</h3>
-        <p>Processos automáticos ao subir arquivos no S3, com logs no CloudWatch.</p>
-        <div class="meta"><span>AWS</span><span>Python</span><span>Serverless</span></div>
-        <div class="actions">
-          <a class="btn small" href="/projetos/aws-lambda-s3.html">Ver case completo</a>
-          <a class="btn small outline" target="_blank" rel="noopener" href="https://github.com/fiamaribeiro/aws-lambda-s3-automation">Repositório</a>
-        </div>
-      </article>
-      <article class="card proj">
-        <img src="assets/thumbs/powerbi-producao.jpg" alt="Power BI" class="thumb">
-        <h3>Power BI — Dashboard de Produção</h3>
-        <p>KPIs de produção, qualidade e horas produtivas com filtros.</p>
-        <div class="meta"><span>Power BI</span><span>DAX</span><span>Modelagem</span></div>
-        <div class="actions">
-          <a class="btn small" href="/projetos/powerbi-producao.html">Ver case completo</a>
-        </div>
-      </article>
-    </div>
+    <p class="muted" style="margin-top:-6px">Cases completos, com contexto, solução e resultados.</p>
+    <div id="projects-grid" class="cards"></div>
   </div>
 </section>
 
@@ -150,15 +131,6 @@
           allowfullscreen="true"></iframe>
       </div>
     </article>
-  </div>
-</section>
-
-<!-- PROJETOS CURADOS -->
-<section id="projetos" class="section">
-  <div class="container">
-    <h2>Projetos</h2>
-    <p class="muted" style="margin-top:-6px">Seleção de trabalhos. Clique em “Ver case completo” para ler o passo a passo.</p>
-    <div id="repo-grid" class="cards"></div>
   </div>
 </section>
 
@@ -226,6 +198,6 @@
   </div>
 </footer>
 
-<script src="scripts/script.js"></script>
+<script src="scripts/script.js?v=2"></script>
 </body>
 </html>

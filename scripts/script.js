@@ -22,7 +22,7 @@ if (y) y.textContent = new Date().getFullYear();
 
 // ===== Projetos: cards resumidos (fonte: projects.json)
 (async function loadProjects(){
-  const container = document.getElementById("repo-grid");
+  const container = document.getElementById("projects-grid");
   if(!container) return;
   try{
     const res = await fetch("projects.json", { cache: "no-store" });
@@ -30,13 +30,13 @@ if (y) y.textContent = new Date().getFullYear();
 
     container.innerHTML = items.map(p => `
       <article class="card proj">
-        <img src="${p.thumb || 'assets/thumbs/placeholder.jpg'}" alt="${p.title}" class="thumb">
-        <h3>${p.title}</h3>
-        <p>${p.summary}</p>
+        <img src="${p.imagem || 'assets/thumbs/placeholder.jpg'}" alt="${p.titulo}" class="thumb">
+        <h3>${p.titulo}</h3>
+        <p>${p.descricao}</p>
         <div class="meta">${(p.tags||[]).map(t=>`<span>${t}</span>`).join('')}</div>
         <div class="actions">
-          <a class="btn small" href="${p.case}">Ver case completo</a>
-          ${p.repo ? `<a class="btn small outline" target="_blank" rel="noopener" href="${p.repo}">Repositório</a>` : ``}
+          <a class="btn small" href="${p.linkCase}">Ver case completo</a>
+          ${p.linkRepo ? `<a class="btn small outline" target="_blank" rel="noopener" href="${p.linkRepo}">Repositório</a>` : ``}
         </div>
       </article>
     `).join("");
