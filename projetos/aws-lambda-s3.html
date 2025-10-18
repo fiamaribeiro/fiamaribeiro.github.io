@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Case: AWS Lambda + S3 — Fiama Ribeiro</title>
+  <meta name="description" content="Case study do projeto de automação com AWS Lambda, S3 e CloudWatch." />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="/#hero" class="brand">Fiama<span>Ribeiro</span></a>
+    <nav>
+      <a href="/#sobre">Sobre</a>
+      <a href="/#skills">Skills</a>
+      <a href="/#destaques">Destaques</a>
+      <a href="/#powerbi">Power BI</a>
+      <a href="/#projetos">Projetos</a>
+      <a href="/#repos">Repositórios</a>
+      <a href="/#contato" class="btn">Contato</a>
+      <button id="themeToggle" aria-label="Alternar tema" class="theme-btn">🌙</button>
+    </nav>
+  </div>
+</header>
+
+<main class="container" style="padding: 80px 24px;">
+  <article>
+    <a href="/#destaques" class="muted">&larr; Voltar para projetos</a>
+    <h1>Case: Automação com AWS Lambda e S3</h1>
+    <p class="muted">Processamento de arquivos via upload no S3, com logs no CloudWatch.</p>
+
+    <div class="meta" style="margin:16px 0;">
+      <span>AWS</span><span>Python</span><span>Serverless</span>
+    </div>
+
+    <img src="../assets/thumbs/lambda-s3.jpg" alt="Lambda + S3" style="border-radius:16px; margin-bottom:24px;">
+
+    <h2>Problema</h2>
+    <p>A necessidade era criar um fluxo de trabalho automatizado que processasse arquivos assim que fossem enviados para um bucket S3. O processo deveria ser serverless, escalável e com monitoramento de logs para garantir a rastreabilidade.</p>
+
+    <h2>Solução</h2>
+    <p>Implementei uma função AWS Lambda em Python que é acionada por eventos de upload no S3. A função realiza o processamento necessário e registra os resultados no Amazon CloudWatch. Esta abordagem elimina a necessidade de servidores provisionados, reduzindo custos e complexidade.</p>
+
+    <h3>Tecnologias Utilizadas</h3>
+    <ul>
+      <li><strong>AWS Lambda:</strong> Execução de código sem servidor.</li>
+      <li><strong>Amazon S3:</strong> Armazenamento de objetos para acionar a função.</li>
+      <li><strong>Amazon CloudWatch:</strong> Monitoramento e armazenamento de logs.</li>
+      <li><strong>Python:</strong> Linguagem de programação da função Lambda.</li>
+      <li><strong>IAM:</strong> Gerenciamento de permissões de acesso.</li>
+    </ul>
+
+    <h2>Resultados</h2>
+    <ul>
+      <li><strong>Eficiência:</strong> O processamento de arquivos agora é 100% automatizado.</li>
+      <li><strong>Custo-Benefício:</strong> O modelo serverless garante que o pagamento seja feito apenas pelo tempo de execução do código.</li>
+      <li><strong>Escalabilidade:</strong> A solução escala automaticamente com o volume de uploads.</li>
+    </ul>
+
+    <div class="actions" style="margin-top:24px;">
+      <a class="btn primary" target="_blank" rel="noopener" href="https://github.com/fiamaribeiro/aws-lambda-s3-automation">Ver no GitHub</a>
+    </div>
+  </article>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>© <span id="year"></span> Fiama Ribeiro — fiama.tech</p>
+  </div>
+</footer>
+
+<script src="../scripts/script.js"></script>
+</body>
+</html>

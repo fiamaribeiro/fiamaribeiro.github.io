@@ -51,10 +51,10 @@ a{color:inherit;text-decoration:none}
 .btn.outline{background:transparent}
 .btn.small{padding:8px 12px;font-size:.9rem}
 
-.skills-grid .skill{background:var(--surface);border:1px solid var(--muted);border-radius:12px;padding:12px}
-.skill-top{display:flex;justify-content:space-between}
-.bar{height:8px;background:var(--muted);border-radius:999px;margin-top:8px;overflow:hidden}
-.bar span{display:block;height:100%;background:linear-gradient(90deg,var(--brand),var(--brand-2))}
+.skills-grid-new{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.skill-category{background:var(--surface);border:1px solid var(--muted);border-radius:var(--radius);padding:18px}
+.skill-category h3{margin:0 0 10px;color:var(--brand)}
+.skill-category ul{margin:0;padding-left:18px;color:var(--sub)}
 
 .facts h3{margin-top:0}
 .bullets{padding-left:18px}
