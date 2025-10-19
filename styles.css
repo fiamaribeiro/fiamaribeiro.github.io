@@ -85,3 +85,66 @@ a{color:inherit;text-decoration:none}
 .repo-card .meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
 .repo-card .meta span{background:rgba(96,165,250,.12);color:#93C5FD;padding:4px 8px;border-radius:999px;font-size:12px}
 .repo-card .actions{display:flex;gap:10px;margin-top:10px;flex-wrap:wrap}
+
+
+/* === Ajustes gerais para mobile === */
+* { box-sizing: border-box; }
+img, iframe { max-width: 100%; height: auto; }
+
+.btn { min-height: 44px; line-height: 1; padding: 12px 16px; }
+
+/* Grids se adaptam */
+.hero-inner { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 32px; align-items: center; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.thumb { width: 100%; height: 180px; object-fit: cover; border-radius: 12px; }
+
+/* Power BI wrapper já está com aspect-ratio; garante margens no mobile */
+.bi-embed { aspect-ratio: 16/9; border-radius: 16px; overflow: hidden; }
+
+/* ===== NAV responsiva ===== */
+.menu-btn { display: none; background: transparent; border: 0; font-size: 24px; cursor: pointer; color: var(--text); }
+.nav .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.nav .brand { white-space: nowrap; }
+
+/* Mobile first breakpoints */
+@media (max-width: 1024px) {
+  .hero-inner { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 860px) {
+  /* mostra o botão do menu e transforma o nav em gaveta */
+  .menu-btn { display: inline-block; }
+
+  .nav #siteNav {
+    position: fixed;
+    inset: 0 0 0 auto; /* lado direito */
+    width: min(80vw, 320px);
+    background: var(--bg);
+    border-left: 1px solid var(--muted);
+    padding: 80px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    translate: 100% 0;          /* escondido */
+    transition: translate .25s ease;
+    z-index: 999;
+  }
+  /* overlay sutil ao abrir o menu */
+  body.nav-open::before{
+    content:""; position: fixed; inset:0; background: rgba(0,0,0,.35); backdrop-filter: blur(2px);
+  }
+  body.nav-open #siteNav { translate: 0 0; }
+  .theme-btn { align-self: flex-start; } /* tema dentro do menu */
+
+  .grid-2 { grid-template-columns: 1fr; }
+  .hero-text h1 { font-size: clamp(22px, 6vw, 32px); }
+  .badges { display: flex; flex-wrap: wrap; gap: 8px; }
+}
+
+@media (max-width: 480px) {
+  .container { padding-left: 14px; padding-right: 14px; }
+  .thumb { height: 160px; }
+  .repo-controls { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .repo-controls input { grid-column: 1 / -1; }
+}
