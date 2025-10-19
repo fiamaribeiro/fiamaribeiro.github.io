@@ -6,7 +6,7 @@
     "homepage": "https://fiamaribeiro.github.io/",
     "language": "HTML",
     "stargazers_count": 0,
-    "pushed_at": "2025-10-17T12:22:40Z"
+    "pushed_at": "2025-10-19T03:28:49Z"
   },
   {
     "name": "aws-lambda-s3-automation",
@@ -124,35 +124,5 @@
     "language": "JavaScript",
     "stargazers_count": 0,
     "pushed_at": "2025-01-16T22:55:11Z"
-  }
-]
-
-[
-  {
-    "slug": "aws-lambda-s3",
-    "title": "AWS Lambda + S3 Automation",
-    "summary": "Automação disparada por uploads no S3; Lambda (Python) processa, registra logs no CloudWatch e organiza no destino.",
-    "tags": ["AWS", "Python", "Serverless"],
-    "thumb": "assets/thumbs/lambda-s3.jpg",
-    "case": "/projetos/aws-lambda-s3.html",
-    "repo": "https://github.com/fiamaribeiro/aws-lambda-s3-automation"
-  },
-  {
-    "slug": "powerbi-producao",
-    "title": "Power BI — Dashboard de Produção",
-    "summary": "KPIs: total produzido, rejeitos, % qualidade e horas produtivas com filtros por período/operador.",
-    "tags": ["Power BI", "DAX", "Modelagem"],
-    "thumb": "assets/thumbs/powerbi-producao.jpg",
-    "case": "/projetos/powerbi-producao.html",
-    "repo": "https://github.com/fiamaribeiro"
-  },
-  {
-    "slug": "portfolio-amplify",
-    "title": "Portfólio + CI/CD",
-    "summary": "Este site com deploy automatizado (GitHub Pages/Amplify), SEO básico e seção dinâmica de repositórios.",
-    "tags": ["HTML/CSS", "CI/CD", "GitHub Pages"],
-    "thumb": "assets/thumbs/portfolio-amplify.jpg",
-    "case": "/",
-    "repo": "https://github.com/fiamaribeiro/fiamaribeiro.github.io"
   }
 ]
