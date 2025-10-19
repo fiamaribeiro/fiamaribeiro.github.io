@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AWS Lambda + S3 Automation | Case • Fiama Ribeiro</title>
+  <meta name="description" content="Automação disparada por uploads no S3, processamento em Lambda (Python) e logs/alertas no CloudWatch.">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="brand">Fiama<span>Ribeiro</span></a>
+    <nav>
+      <a href="/#destaques">Destaques</a>
+      <a href="/#projetos">Projetos</a>
+      <a href="/#contato" class="btn">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <a href="/" class="btn outline" style="margin-bottom:14px">← Voltar</a>
+
+    <h1>AWS Lambda + S3 Automation</h1>
+    <p class="muted">Processamento automático ao subir arquivos no S3, com logs e métricas no CloudWatch.</p>
+
+    <div class="cards" style="margin-top:18px">
+      <article class="card">
+        <h3>Contexto</h3>
+        <p>
+          Eliminar tarefas manuais pós-upload (validar, renomear, mover e registrar eventos).
+          Eventos do <strong>Amazon S3</strong> disparam uma <strong>AWS Lambda</strong> em <strong>Python</strong>
+          para padronizar o fluxo e registrar evidências no <strong>CloudWatch</strong>.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Arquitetura</h3>
+        <ul>
+          <li>Amazon S3 (evento <code>ObjectCreated</code>)</li>
+          <li>AWS Lambda (Python 3.x) com IAM mínimo (least privilege)</li>
+          <li>CloudWatch (logs e métrica customizada)</li>
+          <li>Infra e função versionadas no GitHub</li>
+        </ul>
+        <!-- Se tiver imagem, coloque em /assets/cases/aws-lambda-s3/arch.png e descomente:
+        <img src="/assets/cases/aws-lambda-s3/arch.png" alt="Arquitetura Lambda + S3" style="margin-top:10px;border-radius:12px">
+        -->
+      </article>
+
+      <article class="card">
+        <h3>Fluxo</h3>
+        <ol>
+          <li>Upload em <em>s3://bucket/input/</em>.</li>
+          <li>S3 aciona a Lambda com o evento do objeto.</li>
+          <li>Lambda valida e aplica a regra de negócio.</li>
+          <li>Move para <em>processed/</em> ou <em>rejected/</em>.</li>
+          <li>CloudWatch registra logs e métricas para alertas.</li>
+        </ol>
+      </article>
+
+      <article class="card">
+        <h3>Resultados</h3>
+        <ul>
+          <li>Zero intervenção manual (↑ produtividade)</li>
+          <li>Rastreabilidade via logs e métricas</li>
+          <li>Custo sob demanda (arquitetura serverless)</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="actions" style="margin-top:16px">
+      <a class="btn" target="_blank" rel="noopener" href="https://github.com/fiamaribeiro/aws-lambda-s3-automation">Repositório</a>
+    </div>
+  </div>
+</main>
+
+<footer class="footer"><div class="container"><p>© <span id="year"></span> Fiama Ribeiro</p></div></footer>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
