@@ -189,3 +189,29 @@ if (y) y.textContent = new Date().getFullYear();
     }
   });
 })();
+// === Menu mobile (hambúrguer) ===
+(function initMobileMenu(){
+  const btn  = document.getElementById('menuToggle');
+  const nav  = document.getElementById('siteNav');
+  if (!btn || !nav) return;
+
+  const close = () => {
+    document.body.classList.remove('nav-open');
+    btn.setAttribute('aria-expanded', 'false');
+  };
+  const open = () => {
+    document.body.classList.add('nav-open');
+    btn.setAttribute('aria-expanded', 'true');
+  };
+
+  btn.addEventListener('click', () => {
+    const opened = document.body.classList.contains('nav-open');
+    opened ? close() : open();
+  });
+
+  // fecha ao clicar em qualquer link do menu
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
+
+  // fecha com ESC
+  document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') close(); });
+})();
