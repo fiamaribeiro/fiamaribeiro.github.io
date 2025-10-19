@@ -20,28 +20,46 @@
 const y = document.getElementById("year");
 if (y) y.textContent = new Date().getFullYear();
 
-// ===== Projetos: cards resumidos (fonte: projects.json)
-(async function loadProjects(){
-  const container = document.getElementById("repo-grid");
-  if(!container) return;
-  try{
-    const res = await fetch("projects.json", { cache: "no-store" });
-    const items = await res.json();
+// ===== Projetos curados (carrega projects.json com tolerância de chaves)
+(async function loadCuratedProjects(){
+  const container = document.getElementById("repo-grid"); // seção "Projetos"
+  if (!container) return;
 
-    container.innerHTML = items.map(p => `
-      <article class="card proj">
-        <img src="${p.thumb || 'assets/thumbs/placeholder.jpg'}" alt="${p.title}" class="thumb">
-        <h3>${p.title}</h3>
-        <p>${p.summary}</p>
-        <div class="meta">${(p.tags||[]).map(t=>`<span>${t}</span>`).join('')}</div>
-        <div class="actions">
-          <a class="btn small" href="${p.case}">Ver case completo</a>
-          ${p.repo ? `<a class="btn small outline" target="_blank" rel="noopener" href="${p.repo}">Repositório</a>` : ``}
-        </div>
-      </article>
-    `).join("");
-  }catch(e){
-    console.warn("Falha ao carregar projects.json", e);
+  function norm(p){
+    // aceita tanto "title" quanto "titulo", etc.
+    const title   = p.title   ?? p.titulo   ?? "Projeto sem título";
+    const summary = p.summary ?? p.descricao ?? "Sem descrição.";
+    const tags    = Array.isArray(p.tags) ? p.tags : [];
+    const caseUrl = p.case    ?? p.linkCase ?? "#";
+    const repoUrl = p.repo    ?? p.linkRepo ?? "";
+    const thumb   = p.thumb   ?? p.imagem   ?? "assets/thumbs/placeholder.jpg";
+    return { title, summary, tags, caseUrl, repoUrl, thumb };
+  }
+
+  try {
+    const res = await fetch("projects.json", { cache: "no-store" });
+    if (!res.ok) throw new Error("Falha ao carregar projects.json");
+    const data = await res.json();
+
+    const cards = (Array.isArray(data) ? data : []).map(raw => {
+      const p = norm(raw);
+      return `
+        <article class="card proj">
+          <img class="thumb" src="${p.thumb}" alt="${p.title}" onerror="this.src='assets/thumbs/placeholder.jpg'">
+          <h3>${p.title}</h3>
+          <p>${p.summary}</p>
+          <div class="meta">${p.tags.map(t=>`<span>${t}</span>`).join("")}</div>
+          <div class="actions">
+            ${p.caseUrl ? `<a class="btn small" href="${p.caseUrl}">Ver case completo</a>` : ``}
+            ${p.repoUrl ? `<a class="btn small outline" target="_blank" rel="noopener" href="${p.repoUrl}">Repositório</a>` : ``}
+          </div>
+        </article>
+      `;
+    }).join("");
+
+    container.innerHTML = cards || `<p class="muted">Ainda não há projetos curados para exibir.</p>`;
+  } catch (e) {
+    console.warn(e);
     container.innerHTML = `<p class="muted">Não foi possível carregar os projetos agora.</p>`;
   }
 })();
