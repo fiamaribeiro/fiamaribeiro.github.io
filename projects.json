@@ -6,7 +6,7 @@
     "homepage": "https://fiamaribeiro.github.io/",
     "language": "HTML",
     "stargazers_count": 0,
-    "pushed_at": "2025-10-19T23:42:59Z"
+    "pushed_at": "2025-10-20T12:23:31Z"
   },
   {
     "name": "aws-lambda-s3-automation",
@@ -28,7 +28,7 @@
   },
   {
     "name": "aws-cloudformation-project",
-    "description": "Infraestrutura como Código (IaC) na AWS com CloudFormation: VPC p��blica, S3 e EC2 opcional. Documentação + templates + prints do lab da DIO.",
+    "description": "Infraestrutura como Código (IaC) na AWS com CloudFormation: VPC pública, S3 e EC2 opcional. Documentação + templates + prints do lab da DIO.",
     "html_url": "https://github.com/fiamaribeiro/aws-cloudformation-project",
     "homepage": "",
     "language": "",
