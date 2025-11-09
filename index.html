@@ -1,235 +1,535 @@
-<!doctype html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Fiama Ribeiro — Cloud, Automação & Power BI</title>
-  <meta name="description" content="Portfólio de Fiama Ribeiro — Cloud/AWS, automações, dados e dashboards Power BI. Disponível para oportunidades." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <title>Fiama Ribeiro | Analista de Dados & Gestão de TI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Fiama Ribeiro - Analista de Dados Júnior, Gestão de TI, Business Intelligence, Power BI, SQL e projetos em tecnologia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #050816;
+      --bg-soft: #0f172a;
+      --accent: #38bdf8;
+      --accent-soft: rgba(56,189,248,0.14);
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --border: #1f2937;
+      --radius: 18px;
+      --transition: 0.25s ease;
+      --font: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font);
+      background: radial-gradient(circle at top, #111827 0, #020817 42%, #000 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      backdrop-filter: blur(16px);
+      background: radial-gradient(circle at top, rgba(15,23,42,0.98), rgba(2,6,23,0.98));
+      border-bottom: 1px solid rgba(148,163,253,0.04);
+    }
+
+    .nav {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .logo {
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      font-size: 0.98rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo span {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 12px var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 16px;
+      font-size: 0.86rem;
+    }
+
+    .nav-links a {
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: var(--muted);
+      border: 1px solid transparent;
+      transition: var(--transition);
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+      border-color: rgba(56,189,248,0.22);
+      background: rgba(15,23,42,0.98);
+    }
+
+    main {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 26px 18px 40px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    /* Hero */
+    #hero {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      gap: 22px;
+      align-items: center;
+      padding: 26px 22px;
+      margin-top: 6px;
+      border-radius: 26px;
+      background:
+        radial-gradient(circle at top left, rgba(56,189,248,0.09), transparent),
+        radial-gradient(circle at top right, rgba(129,140,248,0.07), transparent),
+        rgba(2,6,23,0.98);
+      border: 1px solid rgba(75,85,99,0.6);
+      box-shadow: 0 18px 40px rgba(15,23,42,0.9);
+    }
+
+    #hero h1 {
+      font-size: clamp(1.9rem, 3vw, 2.2rem);
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    #hero .subtitle {
+      font-size: 0.92rem;
+      color: var(--accent);
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+
+    #hero p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 10px;
+      margin-top: 6px;
+      flex-wrap: wrap;
+    }
+
+    .btn, .btn-outline {
+      padding: 9px 16px;
+      border-radius: 999px;
+      font-size: 0.84rem;
+      border: 1px solid transparent;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      transition: var(--transition);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .btn {
+      background: var(--accent);
+      color: #020817;
+      font-weight: 600;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+      box-shadow: 0 8px 26px rgba(56,189,248,0.32);
+      text-decoration: none;
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--accent);
+      border-color: rgba(56,189,248,0.42);
+    }
+
+    .btn-outline:hover {
+      background: var(--accent-soft);
+      text-decoration: none;
+    }
+
+    .hero-side {
+      border-radius: 24px;
+      padding: 14px 12px;
+      border: 1px solid rgba(148,163,253,0.18);
+      background: radial-gradient(circle at top, rgba(15,23,42,1), rgba(2,6,23,1));
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      font-size: 0.7rem;
+      background: rgba(15,23,42,1);
+      border: 1px solid rgba(56,189,248,0.28);
+      color: var(--accent);
+      width: fit-content;
+    }
+
+    .hero-side h3 {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    /* Sections */
+    h2 {
+      font-size: 1.14rem;
+      margin-bottom: 12px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      color: var(--text);
+    }
+
+    .section-text {
+      font-size: 0.88rem;
+      color: var(--muted);
+      max-width: 760px;
+    }
+
+    /* Cards & grid */
+    .grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .grid-3 {
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .card {
+      padding: 12px 12px 11px;
+      border-radius: var(--radius);
+      background: var(--bg-soft);
+      border: 1px solid rgba(31,41,55,1);
+      box-shadow: 0 14px 26px rgba(15,23,42,0.66);
+      transition: var(--transition);
+      font-size: 0.83rem;
+    }
+
+    .card:hover {
+      border-color: rgba(56,189,248,0.34);
+      box-shadow: 0 18px 40px rgba(15,23,42,0.96);
+      transform: translateY(-2px);
+    }
+
+    .card h3 {
+      font-size: 0.92rem;
+      margin-bottom: 4px;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .card p {
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .tag {
+      display: inline-flex;
+      padding: 2px 8px;
+      margin-top: 4px;
+      margin-right: 4px;
+      border-radius: 999px;
+      font-size: 0.66rem;
+      background: rgba(15,23,42,1);
+      color: var(--accent);
+      border: 1px solid rgba(56,189,248,0.32);
+    }
+
+    .links-inline {
+      margin-top: 4px;
+      font-size: 0.78rem;
+    }
+
+    /* Dashboards */
+    .dashboard-frame {
+      width: 100%;
+      height: 420px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: radial-gradient(circle at top, rgba(15,23,42,1), rgba(2,6,23,1));
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+
+    .placeholder {
+      font-size: 0.78rem;
+      color: var(--muted);
+      padding: 14px;
+      text-align: center;
+    }
+
+    /* Lists */
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    /* Contact */
+    #contato p {
+      font-size: 0.84rem;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    footer {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 18px 24px;
+      font-size: 0.72rem;
+      color: #6b7280;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    @media (max-width: 768px) {
+      #hero {
+        grid-template-columns: 1fr;
+      }
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
 </head>
-
 <body>
-<header class="nav">
-  <div class="container nav-inner">
-    <a href="#hero" class="brand">Fiama<span>Ribeiro</span></a>
 
-    <!-- botão do menu (aparece só no mobile) -->
-    <button id="menuToggle" class="menu-btn" aria-label="Abrir menu" aria-controls="siteNav" aria-expanded="false">☰</button>
-
-    <nav id="siteNav">
+<header>
+  <nav class="nav">
+    <div class="logo">
+      <span></span>
+      <div>FIAMA.RIBEIRO • DATA & TI</div>
+    </div>
+    <div class="nav-links">
       <a href="#sobre">Sobre</a>
-      <a href="#skills">Skills</a>
-      <a href="#destaques">Destaques</a>
-      <a href="#powerbi">Power BI</a>
       <a href="#projetos">Projetos</a>
-      <a href="#repos">Repositórios</a>
-      <a href="#contato" class="btn">Contato</a>
-      <button id="themeToggle" aria-label="Alternar tema" class="theme-btn">🌙</button>
-    </nav>
-  </div>
+      <a href="#dashboards">Dashboards</a>
+      <a href="#certificacoes">Certificações</a>
+      <a href="#contato">Contato</a>
+    </div>
+  </nav>
 </header>
 
-<!-- HERO -->
-<section id="hero" class="hero">
-  <div class="container hero-inner">
-    <div class="hero-text">
-      <div class="avatar-and-brand">
-        <img class="avatar" src="assets/avatar-fiama.jpg" alt="Foto de perfil de Fiama Ribeiro" />
-        <div>
-          <h1>Cloud, Automação & Dashboards<br /><span>para gerar resultado</span></h1>
-          <p>
-            Sou <strong>Fiama Ribeiro</strong>, estudante de Gestão de T.I. e profissional focada em
-            <strong>AWS/Serverless</strong>, <strong>automações</strong> e <strong>Power BI</strong>.
-            Construo soluções simples, seguras e mensuráveis — do back à visualização.
-          </p>
-          <div class="hero-ctas">
-            <a href="#destaques" class="btn primary">Ver soluções</a>
-            <a href="#contato" class="btn outline">Fale comigo</a>
-          </div>
-          <div class="social-row">
-            <a class="social" href="mailto:fiama.ribeiro@fiama.tech" aria-label="Email">📧 Email</a>
-            <a class="social" href="https://www.linkedin.com/in/fiama-ribeiro-costa" target="_blank" rel="noopener" aria-label="LinkedIn">💼 LinkedIn</a>
-            <a class="social" href="https://github.com/fiamaribeiro" target="_blank" rel="noopener" aria-label="GitHub">🐙 GitHub</a>
-          </div>
-          <div class="badges">
-            <span class="badge">AWS • Lambda • S3 • CloudWatch</span>
-            <span class="badge">Python & Automação</span>
-            <span class="badge">Power BI</span>
-            <span class="badge">CI/CD</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="hero-art">
-      <img src="assets/hero-placeholder.svg" alt="Ilustração de nuvem/AWS" />
-    </div>
-  </div>
-</section>
-
-<!-- SOBRE -->
-<section id="sobre" class="section">
-  <div class="container grid-2">
+<main>
+  <!-- HERO -->
+  <section id="hero">
     <div>
-      <h2>Sobre</h2>
+      <div class="subtitle">Analista de Dados Júnior | Gestão de TI | Campus Expert DIO</div>
+      <h1>Transformando dados em decisões inteligentes.</h1>
       <p>
-        Atuo com foco em <strong>Cloud/Serverless</strong>, <strong>automação de processos</strong> e <strong>dados</strong>.
-        Minha pegada é pragmática: evidência, documentação e entrega. Converso bem com times de
-        <strong>Desenvolvimento</strong> e <strong>RH</strong> — unindo técnica e comunicação.
+        Conecto <strong>dados, processos e pessoas</strong> para criar visualizações claras,
+        automações eficientes e análises que apoiam a estratégia do negócio.
       </p>
-      <ul class="bullets">
-        <li>🎓 Gestão de T.I. — Anhanguera</li>
-        <li>💼 Auxiliar de Contratos — Contrei</li>
-        <li>🌩️ Stack favorita: AWS (Lambda, S3, CloudWatch)</li>
-        <li>📊 Dashboards e storytelling com Power BI</li>
-      </ul>
-    </div>
-    <div class="card facts">
-      <h3>O que entrego para sua empresa</h3>
-      <ul>
-        <li>Automação de tarefas repetitivas (↑ produtividade)</li>
-        <li>Orquestrações serverless confiáveis (↓ custos)</li>
-        <li>Dashboards com KPIs claros p/ liderança</li>
-        <li>Documentação e handoff prontos para time</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="section alt">
-  <div class="container">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill"><div class="skill-top"><span>AWS</span><small>Lambda • S3 • CloudWatch</small></div><div class="bar"><span style="width:80%"></span></div></div>
-      <div class="skill"><div class="skill-top"><span>Python</span><small>Automação • Scripts</small></div><div class="bar"><span style="width:72%"></span></div></div>
-      <div class="skill"><div class="skill-top"><span>Git & GitHub</span><small>Fluxo, Issues, PR</small></div><div class="bar"><span style="width:85%"></span></div></div>
-      <div class="skill"><div class="skill-top"><span>Power BI</span><small>DAX • Modelagem</small></div><div class="bar"><span style="width:75%"></span></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- DESTAQUES -->
-<section id="destaques" class="section">
-  <div class="container">
-    <h2>Projetos em Destaque</h2>
-    <div class="cards">
-      <article class="card proj">
-        <img src="assets/assets/thumbs/lambda-s3.jpg" alt="Lambda + S3" class="thumb">
-        <h3>AWS Lambda + S3 Automation</h3>
-        <p>Processos automáticos ao subir arquivos no S3, com logs no CloudWatch.</p>
-        <div class="meta"><span>AWS</span><span>Python</span><span>Serverless</span></div>
-        <div class="actions">
-          <a class="btn small" href="/projetos/aws-lambda-s3.html">Ver case completo</a>
-          <a class="btn small outline" target="_blank" rel="noopener" href="https://github.com/fiamaribeiro/aws-lambda-s3-automation">Repositório</a>
-        </div>
-      </article>
-      <article class="card proj">
-        <img src="assets/thumbs/powerbi-producao.jpg" alt="Power BI" class="thumb">
-        <h3>Power BI — Dashboard de Produção</h3>
-        <p>KPIs de produção, qualidade e horas produtivas com filtros.</p>
-        <div class="meta"><span>Power BI</span><span>DAX</span><span>Modelagem</span></div>
-        <div class="actions">
-          <a class="btn small" href="/projetos/powerbi-producao.html">Ver case completo</a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- POWER BI -->
-<section id="powerbi" class="section">
-  <div class="container">
-    <h2>Power BI — dashboards interativos</h2>
-    <p class="muted">Amostra em destaque. Mais cases na seção de Projetos.</p>
-    <article class="card bi-card">
-      <h3>Dashboard de Produção (KPI Geral)</h3>
-      <p class="muted">Produção mensal, % qualidade, horas produtivas e paradas.</p>
-      <div class="bi-embed">
-        <iframe
-          title="Dashboard de Produção"
-          src="https://app.powerbi.com/view?r=eyJrIjoiNDBmYTI3OTEtMmFhZi00OTE3LThmYjQtMjEzNzJhYzU2NTg1IiwidCI6ImZjNWY4YTA1LWE0NDAtNDIyOC1hYzg0LWE4MjUwMTU0YzFmMCJ9"
-          allowfullscreen="true"></iframe>
+      <p>
+        Experiência com <strong>Power BI, Power Query, DAX, SQL, Excel avançado</strong> e práticas de
+        <strong>ETL e modelagem de dados</strong>, aplicadas em cenários reais.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projetos" class="btn">Ver projetos em destaque</a>
+        <a href="#contato" class="btn-outline">Falar comigo</a>
       </div>
-    </article>
-  </div>
-</section>
+    </div>
+    <div class="hero-side">
+      <div class="badge">🎓 DIO Campus Expert – Turma 14</div>
+      <h3>Posicionamento técnico com base em entregas reais.</h3>
+      <p>
+        Portfólio alinhado à prática: dashboards, pipelines, automações e projetos em nuvem documentados de forma clara.
+      </p>
+      <p>
+        Focada em Business Intelligence, visualização de dados, integração entre sistemas e melhoria contínua.
+      </p>
+      <p>
+        📍 Belo Horizonte · Aberta a desafios em dados, BI e tecnologia.
+      </p>
+    </div>
+  </section>
 
-<!-- PROJETOS CURADOS -->
-<section id="projetos" class="section">
-  <div class="container">
-    <h2>Projetos</h2>
-    <p class="muted" style="margin-top:-6px">Seleção de trabalhos. Clique em “Ver case completo” para ler o passo a passo.</p>
-    <div id="repo-grid" class="cards"></div>
-  </div>
-</section>
-
-<!-- TODOS OS REPOSITÓRIOS (GitHub API) -->
-<section id="repos" class="section">
-  <div class="container">
-    <h2>Todos os repositórios</h2>
-    <p class="muted" style="margin-top:-6px">
-      Lista automática dos meus repositórios públicos no GitHub (atualiza sozinha).
+  <!-- SOBRE -->
+  <section id="sobre">
+    <h2>Sobre mim</h2>
+    <p class="section-text">
+      Sou estudante de <strong>Gestão de TI</strong> e atuo na interseção entre
+      <strong>dados, processos e operação</strong>, construindo análises, dashboards e automações que tornam a tomada de decisão mais simples e confiável.
+      Participo do programa <strong>DIO Campus Expert – Turma 14</strong>, onde venho consolidando minha presença técnica,
+      comunicação profissional e atuação na comunidade.
     </p>
-    <div class="repo-controls">
-      <input id="repo-search" type="search" placeholder="Buscar por nome/descrição…" aria-label="Buscar repositórios">
-      <label class="chk"><input id="repo-forks" type="checkbox"> mostrar forks</label>
-      <select id="repo-sort" aria-label="Ordenar">
-        <option value="updated">Ordenar: Atualizados</option>
-        <option value="pushed">Ordenar: Último push</option>
-        <option value="created">Ordenar: Criados</option>
-        <option value="full_name">Ordenar: Nome</option>
-      </select>
+    <p class="section-text" style="margin-top:6px;">
+      Tenho experiência com <strong>Power BI, Power Query, DAX, SQL, Excel avançado</strong> e conceitos de
+      <strong>ETL, modelagem de dados e computação em nuvem</strong>. Meu foco é transformar informação dispersa em
+      <strong>histórias visuais claras, eficientes e orientadas a resultado</strong>.
+    </p>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos">
+    <h2>Projetos em destaque</h2>
+    <p class="section-text">
+      Uma seleção de projetos que refletem minha atuação em Business Intelligence, análise de dados,
+      automação e cloud. Cada entrega é documentada para que qualquer pessoa consiga entender o contexto, a solução
+      e o impacto.
+    </p>
+
+    <div class="grid grid-3" style="margin-top:14px;">
+      <div class="card">
+        <h3>📊 Dashboard Operacional – Power BI</h3>
+        <p>Consolidação de cinco fontes de dados operacionais em um único painel, reduzindo ~12h/mês de trabalho manual e apoiando rituais semanais de performance.</p>
+        <p><strong>Stack:</strong> Power BI, Power Query, DAX, Excel</p>
+        <div class="links-inline">
+          <a href="https://github.com/SEU-USER/dashboard-operacional-powerbi" target="_blank">Ver no GitHub</a>
+        </div>
+        <span class="tag">Business Intelligence</span>
+        <span class="tag">KPIs</span>
+      </div>
+
+      <div class="card">
+        <h3>💡 Dashboard Comercial – Metas & Receita</h3>
+        <p>Painel interativo para acompanhamento de metas, faturamento, clientes e regiões, com segmentações dinâmicas e indicadores visuais.</p>
+        <p><strong>Stack:</strong> Power BI, Power Query, DAX</p>
+        <div class="links-inline">
+          <a href="https://github.com/SEU-USER/dashboard-comercial-powerbi" target="_blank">Ver no GitHub</a>
+        </div>
+        <span class="tag">Visualização de Dados</span>
+        <span class="tag">Planejamento Comercial</span>
+      </div>
+
+      <div class="card">
+        <h3>🤖 Chat Assistant Node + React</h3>
+        <p>Aplicação web simulando um assistente virtual, integrando frontend em React com backend Node.js e consumo de API.</p>
+        <p><strong>Stack:</strong> Node.js, React, REST API</p>
+        <div class="links-inline">
+          <a href="https://github.com/SEU-USER/chat-assistant-node-react" target="_blank">Ver no GitHub</a>
+        </div>
+        <span class="tag">Integração</span>
+        <span class="tag">Frontend & Backend</span>
+      </div>
+
+      <div class="card">
+        <h3>☁️ Orquestração Serverless – AWS Step Functions</h3>
+        <p>Fluxo serverless que valida entradas, processa em paralelo, grava no DynamoDB e envia notificações via SNS.</p>
+        <p><strong>Stack:</strong> AWS Lambda, Step Functions, DynamoDB, SNS, SAM</p>
+        <div class="links-inline">
+          <a href="https://github.com/SEU-USER/aws-step-functions-lab" target="_blank">Ver no GitHub</a>
+        </div>
+        <span class="tag">Cloud</span>
+        <span class="tag">Arquitetura Serverless</span>
+      </div>
+
+      <div class="card">
+        <h3>🏗️ AWS CloudFormation – Infra como Código</h3>
+        <p>Template para provisionamento automatizado de VPC, Subnet, Internet Gateway, rota e instância EC2, com documentação e diagrama.</p>
+        <p><strong>Stack:</strong> AWS CloudFormation, YAML</p>
+        <div class="links-inline">
+          <a href="https://github.com/SEU-USER/aws-cloudformation-lab" target="_blank">Ver no GitHub</a>
+        </div>
+        <span class="tag">Infraestrutura como Código</span>
+        <span class="tag">Automação</span>
+      </div>
     </div>
-    <div id="gh-grid" class="cards"></div>
-    <p id="gh-msg" class="muted" style="margin-top:10px"></p>
-  </div>
-</section>
+  </section>
 
-<!-- CONTATO -->
-<section id="contato" class="section">
-  <div class="container grid-2">
-    <div>
-      <h2>Contato</h2>
-      <p>Se você é de <strong>RH</strong> ou <strong>Tech</strong> e quer conversar sobre oportunidades, me envie uma mensagem. Retorno em até 24h úteis.</p>
-      <ul class="contact">
-        <li>📧 <a href="mailto:fiama.ribeiro@fiama.tech">fiama.ribeiro@fiama.tech</a></li>
-        <li>💼 <a href="https://www.linkedin.com/in/fiama-ribeiro-costa/" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li>🐙 <a href="https://github.com/fiamaribeiro" target="_blank" rel="noopener">GitHub</a></li>
-      </ul>
+  <!-- DASHBOARDS -->
+  <section id="dashboards">
+    <h2>Dashboards Power BI</h2>
+    <p class="section-text">
+      Alguns exemplos de dashboards publicados. Os dados podem ser fictícios, mas as estruturas, KPIs e boas práticas refletem cenários reais.
+    </p>
+
+    <div class="dashboard-frame">
+      <!-- Substituir pelo embed real do Power BI -->
+      <!-- Exemplo:
+      <iframe src="https://app.powerbi.com/view?r=SEU_LINK" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+      -->
+      <div class="placeholder">
+        Embed do Power BI será exibido aqui.<br/>
+        Quando o relatório estiver publicado, substitua este bloco pelo <strong>iframe</strong> oficial do Power BI Service.
+      </div>
     </div>
+  </section>
 
-    <form id="contact-form" class="card form" action="https://formspree.io/f/myznbyoy" method="POST">
-      <input type="hidden" name="_subject" value="Contato pelo site fiama.tech" />
-      <input type="hidden" name="_template" value="table" />
-      <input type="hidden" name="_redirect" value="https://fiama.tech/#contato?enviado=1" />
+  <!-- CERTIFICAÇÕES -->
+  <section id="certificacoes">
+    <h2>Certificações & Mentorias</h2>
+    <ul>
+      <li><strong>DIO Campus Expert – Turma 14</strong> · Mentorias focadas em posicionamento técnico, comunidade e carreira em tecnologia.</li>
+      <li><strong>Desafio 01 | DIO Campus Expert</strong> · Atualização estratégica de perfil, marca pessoal e comunicação profissional.</li>
+      <li><strong>Bootcamps & Trilhas DIO</strong> · Formação em lógica, cloud, ferramentas modernas e boas práticas em desenvolvimento.</li>
+      <!-- Adicione certificados reais aqui -->
+    </ul>
+  </section>
 
-      <label>Nome
-        <input name="name" type="text" placeholder="Seu nome" required />
-      </label>
-      <label>Email
-        <input name="_replyto" type="email" placeholder="seu@email.com" required />
-      </label>
-      <label>Mensagem
-        <textarea name="message" rows="4" placeholder="Como posso ajudar?" required></textarea>
-      </label>
-      <label class="hp">Não preencha isto
-        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
-      </label>
-      <button class="btn primary" type="submit">Enviar</button>
-      <p id="form-status" class="muted" aria-live="polite"></p>
-    </form>
-  </div>
-</section>
+  <!-- CONTATO -->
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Aberta a oportunidades em <strong>Business Intelligence, Análise de Dados e projetos em tecnologia</strong>.</p>
+    <p>📧 E-mail: <a href="mailto:fiama@fiama.tech">fiama@fiama.tech</a></p>
+    <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/fiama-ribeiro-costa/" target="_blank">/fiama-ribeiro-costa</a></p>
+    <p>💻 GitHub: <a href="https://github.com/SEU-USER" target="_blank">github.com/SEU-USER</a></p>
+  </section>
+</main>
 
-<footer class="footer">
-  <div class="container">
-    <p>© <span id="year"></span> Fiama Ribeiro — fiama.tech</p>
-  </div>
+<footer>
+  <div>© <span id="year"></span> Fiama Ribeiro. Todos os direitos reservados.</div>
+  <div>Construído com dados, intenção e código.</div>
 </footer>
 
-<script src="scripts/script.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
