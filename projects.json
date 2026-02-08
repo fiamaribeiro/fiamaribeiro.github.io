@@ -6,7 +6,16 @@
     "homepage": "",
     "language": "",
     "stargazers_count": 1,
-    "pushed_at": "2026-02-07T04:25:04Z"
+    "pushed_at": "2026-02-08T04:57:26Z"
+  },
+  {
+    "name": "ai-microvideos-ti",
+    "description": "Microvídeos de IA para traduzir dor de TI em conteúdo curto: CI/CD, DevOps e humor técnico (PT/EN).",
+    "html_url": "https://github.com/fiamaribeiro/ai-microvideos-ti",
+    "homepage": "https://fiama.tech/",
+    "language": "",
+    "stargazers_count": 0,
+    "pushed_at": "2026-02-08T03:08:26Z"
   },
   {
     "name": "fiamaribeiro.github.io",
@@ -15,7 +24,7 @@
     "homepage": "https://fiamaribeiro.github.io/",
     "language": "HTML",
     "stargazers_count": 0,
-    "pushed_at": "2026-02-06T12:37:04Z"
+    "pushed_at": "2026-02-07T12:28:16Z"
   },
   {
     "name": "aws-lambda-s3-automation",
@@ -118,7 +127,7 @@
   },
   {
     "name": "housing-map-salesforce",
-    "description": "O DreamHouse é um projeto desenvolvido no Salesforce utilizando Lightning Web Components (LWC) para criar uma interface interativa e intuitiva de gerenciamento e mapeamento de imóveis. Este projeto visa demonstrar o poder da plataforma Salesforce e suas ferramentas modernas para criar soluções personalizadas e eficientes.",
+    "description": "O DreamHouse é um projeto desenvolvido no Salesforce utilizando Lightning Web Components (LWC) para criar uma interface interativa e intuitiva de gerenciamento e mapeamento de imóveis. Este projeto visa demonstrar o poder da plataforma Salesforce e suas ferramentas modernas para criar soluç��es personalizadas e eficientes.",
     "html_url": "https://github.com/fiamaribeiro/housing-map-salesforce",
     "homepage": "",
     "language": "JavaScript",
