@@ -6,7 +6,16 @@
     "homepage": "",
     "language": "",
     "stargazers_count": 1,
-    "pushed_at": "2026-03-15T05:00:38Z"
+    "pushed_at": "2026-03-16T05:10:07Z"
+  },
+  {
+    "name": "desafio-neo4j-streaming-dio",
+    "description": "Projeto prático em Neo4j para modelagem de um serviço de streaming com banco de dados em grafos, utilizando Cypher, documentação estruturada e evidências visuais.",
+    "html_url": "https://github.com/fiamaribeiro/desafio-neo4j-streaming-dio",
+    "homepage": "https://fiama.tech/",
+    "language": "Cypher",
+    "stargazers_count": 0,
+    "pushed_at": "2026-03-15T17:18:13Z"
   },
   {
     "name": "fiamaribeiro.github.io",
@@ -15,7 +24,7 @@
     "homepage": "https://fiamaribeiro.github.io/",
     "language": "HTML",
     "stargazers_count": 0,
-    "pushed_at": "2026-03-14T12:30:14Z"
+    "pushed_at": "2026-03-15T12:31:24Z"
   },
   {
     "name": "ai-microvideos-ti",
