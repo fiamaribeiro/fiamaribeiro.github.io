@@ -6,7 +6,25 @@
     "homepage": "",
     "language": "",
     "stargazers_count": 1,
-    "pushed_at": "2026-03-16T05:10:07Z"
+    "pushed_at": "2026-03-17T04:47:11Z"
+  },
+  {
+    "name": "neo4j-music-recommendation-system",
+    "description": "Projeto prático em Neo4j para simular um sistema de recomendação de músicas com banco de dados em grafos, utilizando Cypher, modelagem visual e consultas de negócio.",
+    "html_url": "https://github.com/fiamaribeiro/neo4j-music-recommendation-system",
+    "homepage": "https://fiama.tech/",
+    "language": "Cypher",
+    "stargazers_count": 0,
+    "pushed_at": "2026-03-16T19:12:55Z"
+  },
+  {
+    "name": "fiamaribeiro.github.io",
+    "description": "🌐 Meu portfólio online com projetos em Frontend, Backend, Automação e Power BI.",
+    "html_url": "https://github.com/fiamaribeiro/fiamaribeiro.github.io",
+    "homepage": "https://fiamaribeiro.github.io/",
+    "language": "HTML",
+    "stargazers_count": 0,
+    "pushed_at": "2026-03-16T12:49:00Z"
   },
   {
     "name": "desafio-neo4j-streaming-dio",
@@ -16,15 +34,6 @@
     "language": "Cypher",
     "stargazers_count": 0,
     "pushed_at": "2026-03-15T17:18:13Z"
-  },
-  {
-    "name": "fiamaribeiro.github.io",
-    "description": "🌐 Meu portfólio online com projetos em Frontend, Backend, Automação e Power BI.",
-    "html_url": "https://github.com/fiamaribeiro/fiamaribeiro.github.io",
-    "homepage": "https://fiamaribeiro.github.io/",
-    "language": "HTML",
-    "stargazers_count": 0,
-    "pushed_at": "2026-03-15T12:31:24Z"
   },
   {
     "name": "ai-microvideos-ti",
