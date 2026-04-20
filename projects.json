@@ -6,16 +6,25 @@
     "homepage": "",
     "language": "",
     "stargazers_count": 1,
-    "pushed_at": "2026-04-19T05:22:06Z"
+    "pushed_at": "2026-04-20T05:33:18Z"
+  },
+  {
+    "name": "analise-eficiencia-fornecedores-powerbi",
+    "description": "",
+    "html_url": "https://github.com/fiamaribeiro/analise-eficiencia-fornecedores-powerbi",
+    "homepage": "",
+    "language": "",
+    "stargazers_count": 0,
+    "pushed_at": "2026-04-19T23:48:12Z"
   },
   {
     "name": "fiamaribeiro.github.io",
-    "description": "🌐 Meu portfólio online com projetos em Frontend, Backend, Automação e Power BI.",
+    "description": "���� Meu portfólio online com projetos em Frontend, Backend, Automação e Power BI.",
     "html_url": "https://github.com/fiamaribeiro/fiamaribeiro.github.io",
     "homepage": "https://fiamaribeiro.github.io/",
     "language": "HTML",
     "stargazers_count": 0,
-    "pushed_at": "2026-04-17T12:57:13Z"
+    "pushed_at": "2026-04-19T12:38:43Z"
   },
   {
     "name": "neo4j-music-recommendation-system",
