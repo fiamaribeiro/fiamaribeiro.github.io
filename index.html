@@ -2,9 +2,9 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <title>Fiama Ribeiro | Portfólio • Dados, Tech & Gestão de TI</title>
+  <title>Fiama Ribeiro | Gestão de TI, Licenciamento de Software e Dados</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfólio de Fiama Ribeiro - Estudante de Gestão de TI, desenvolvendo projetos em dados, cloud, integrações, Salesforce, JavaScript e inteligência artificial aplicada." />
+  <meta name="description" content="Portfólio de Fiama Ribeiro — profissional de TI com foco em licenciamento de software, processos corporativos, SAP, gestão de contratos, dados e automação." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -135,6 +135,8 @@
       color: var(--muted);
       max-width: 780px;
     }
+
+    .skill-heading { font-size: .86rem; color: var(--text); margin: 16px 0 7px; font-weight: 500; }
 
     /* HERO */
 
@@ -370,6 +372,9 @@
     @media (max-width: 840px) {
       #hero { grid-template-columns: 1fr; }
     }
+    .language-toggle {background:rgba(56,189,248,.10);color:var(--accent);border:1px solid rgba(56,189,248,.5);border-radius:999px;padding:7px 12px;font:600 .8rem var(--font);cursor:pointer;white-space:nowrap;transition:var(--transition)}
+    .language-toggle:hover,.language-toggle:focus-visible{background:var(--accent);color:var(--bg);outline-offset:3px}
+    @media(max-width:768px){.nav{flex-wrap:wrap}.language-toggle{margin-left:auto}}
   </style>
 </head>
 <body>
@@ -378,51 +383,54 @@
   <nav class="nav">
     <div class="logo">
       <span></span>
-      FIAMA.RIBEIRO • DATA &amp; TECH
+      FIAMA.RIBEIRO • IT &amp; SOFTWARE
     </div>
     <div class="nav-links">
       <a href="#sobre">Sobre</a>
-      <a href="#skills">Skills</a>
+      <a href="#atuacao">Atuação</a>
+      <a href="#skills">Competências</a>
       <a href="#projetos">Projetos</a>
       <a href="#labs">Labs &amp; Desafios</a>
-      <a href="#about-en">EN</a>
+      
       <a href="#contato">Contato</a>
     </div>
+    <button type="button" id="language-toggle" class="language-toggle" aria-label="Switch language to English" aria-pressed="false">🌐 EN</button>
   </nav>
 </header>
 
 <main>
 
-  <!-- HERO -->
+  <!-- APRESENTAÇÃO -->
   <section id="hero">
     <div>
-      <div class="subtitle">Estudante de Gestão de TI • Projetos em Dados, Cloud &amp; Integrações</div>
-      <h1>Construindo soluções tech com visão analítica.</h1>
+      <div class="subtitle">Tecnologia da Informação • Licenciamento de Software • Gestão &amp; Dados</div>
+      <h1>Tecnologia, gestão e dados conectados ao negócio.</h1>
       <p>
-        Em desenvolvimento como profissional de tecnologia, conectando <strong>dados, APIs, cloud, Salesforce e boas práticas de código</strong>
-        para criar soluções aplicadas e evolutivas.
+        Sou <strong>Fiama Ribeiro</strong>, profissional de Tecnologia da Informação com atuação em
+        <strong>licenciamento de software e processos corporativos</strong>. Minha trajetória une organização,
+        análise e visão de negócio à formação em Gestão de TI.
       </p>
       <p>
-        Participo de programas e labs da <strong>DIO</strong>, explorando temas como inteligência artificial, aplicações web, integrações
-        e automação.
+        Também desenvolvo conhecimentos em <strong>dados, automação, cloud e desenvolvimento de aplicações</strong>,
+        conectando aprendizado técnico às necessidades reais das empresas.
       </p>
       <div class="hero-buttons">
-        <a href="#projetos" class="btn">Ver projetos em destaque</a>
-        <a href="https://github.com/fiamaribeiro" target="_blank" class="btn-outline">Ver perfil no GitHub</a>
+        <a href="#atuacao" class="btn">Conheça minha atuação</a>
+        <a href="#projetos" class="btn-outline">Explorar projetos</a>
+        <a href="https://github.com/fiamaribeiro" target="_blank" rel="noopener noreferrer" class="btn-outline">GitHub</a>
       </div>
     </div>
-
     <div class="hero-side">
-      <div class="badge">🚀 Em evolução na jornada Tech</div>
-      <h3>Portfólio conectado à prática.</h3>
-      <p>
-        Este portfólio reúne projetos construídos em bootcamps, labs e estudos guiados, com foco em
-        <strong>aprender fazendo</strong> e documentar a evolução técnica.
-      </p>
-      <p>
-        Interesse em <strong>Business Intelligence, APIs, IA aplicada, Salesforce, automações</strong> e boas práticas de desenvolvimento.
-      </p>
-      <p>📍 Belo Horizonte · Aberta a conexões, mentoria e oportunidades na área de tecnologia.</p>
+      <div class="badge">IT • Software Management</div>
+      <h3>Da gestão de contratos à Tecnologia da Informação</h3>
+      <p>Experiência com rotinas de contratos e, atualmente, com processos relacionados a licenciamento de software no contexto corporativo.</p>
+      <div class="skills-wrap">
+        <span class="pill">Licenciamento de software</span>
+        <span class="pill">SAP</span>
+        <span class="pill">Processos e controles</span>
+        <span class="pill">Dados &amp; automação</span>
+      </div>
+      <p>📍 Belo Horizonte · Aberta a conexões profissionais e colaboração em tecnologia.</p>
     </div>
   </section>
 
@@ -430,33 +438,68 @@
   <section id="sobre">
     <h2>Sobre mim</h2>
     <p class="section-text">
-      Sou a Fiama Ribeiro, estudante de <strong>Gestão da Tecnologia da Informação</strong> e participante ativa de bootcamps
-      e laboratórios práticos. Minha trajetória está focada em entender como tecnologia, dados e produto se conectam para gerar valor real.
+      Sou estudante de <strong>Gestão da Tecnologia da Informação na Anhanguera</strong> e atuo na área de TI,
+      em atividades relacionadas a <strong>licenciamento de software, sistemas e controles corporativos</strong>.
+      Minha experiência anterior em contratos contribui para uma visão integrada de processos,
+      documentação e necessidades do negócio.
     </p>
     <p class="section-text" style="margin-top:6px;">
-      Este portfólio reflete essa construção: projetos simples, objetivos e incrementais, que mostram minha curva de aprendizado
-      em desenvolvimento web, integrações, cloud, IA generativa e soluções orientadas a negócio.
+      Meu objetivo é aprofundar minha atuação na interseção entre <strong>gestão de tecnologia, governança,
+      dados e melhoria de processos</strong>. Neste espaço, compartilho projetos e estudos que complementam minha vivência profissional.
     </p>
   </section>
 
-  <!-- SKILLS -->
+  <!-- ATUAÇÃO -->
+  <section id="atuacao">
+    <h2>Atuação profissional</h2>
+    <p class="section-subtitle">Experiência corporativa e evolução de carreira em tecnologia.</p>
+    <div class="grid grid-3">
+      <div class="card">
+        <span class="tag">Atuação atual · TI</span>
+        <h3>Licenciamento de Software</h3>
+        <p>Vivência em processos de licenciamento de software, organização de informações e fluxos corporativos com apoio de sistemas como SAP.</p>
+        <p>Interesse em aprofundar conhecimentos em gestão de ativos de software, conformidade e eficiência operacional.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Experiência anterior</span>
+        <h3>Gestão de contratos</h3>
+        <p>Experiência em rotinas administrativas e contratuais, conferência de dados, organização documental e suporte a processos de negócio.</p>
+        <p>Base importante para a transição à gestão de tecnologia em ambientes corporativos.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Formação &amp; prática</span>
+        <h3>Gestão de TI, Dados e Desenvolvimento</h3>
+        <p>Graduação em Gestão da Tecnologia da Informação na Anhanguera, acompanhada de estudos e projetos com APIs, JavaScript, Azure e Salesforce.</p>
+        <p>Exploração de dados, automação e soluções aplicadas a processos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPETÊNCIAS -->
   <section id="skills">
-    <h2>Tecnologias &amp; Ferramentas</h2>
-    <p class="section-subtitle">
-      Competências em desenvolvimento, cloud e ferramentas utilizadas nos projetos publicados.
-    </p>
+    <h2>Competências &amp; ferramentas</h2>
+    <p class="section-subtitle">Experiência profissional, conhecimentos aplicados e tecnologias em desenvolvimento.</p>
+    <h3 class="skill-heading">Contexto corporativo</h3>
     <div class="skills-wrap">
+      <div class="pill">Licenciamento de software</div>
+      <div class="pill">SAP (rotinas e processos)</div>
+      <div class="pill">Gestão de contratos</div>
+      <div class="pill">Controles e documentação</div>
+      <div class="pill">Excel</div>
+    </div>
+    <h3 class="skill-heading">Dados, desenvolvimento e cloud · estudos e projetos</h3>
+    <div class="skills-wrap">
+      <div class="pill">Power BI</div>
+      <div class="pill">SQL / MySQL (básico)</div>
+      <div class="pill">Python (básico)</div>
       <div class="pill">JavaScript</div>
       <div class="pill">Node.js (básico)</div>
       <div class="pill">React (básico)</div>
       <div class="pill">APIs REST</div>
       <div class="pill">HTML &amp; CSS</div>
       <div class="pill">Git &amp; GitHub</div>
-      <div class="pill">Salesforce (LWC - introdutório)</div>
-      <div class="pill">Azure Cognitive Services (Speech &amp; Language)</div>
-      <div class="pill">Lógica de Programação</div>
-      <div class="pill">CLI &amp; versionamento</div>
-      <div class="pill">Aprendizado Contínuo</div>
+      <div class="pill">Salesforce (LWC introdutório)</div>
+      <div class="pill">Azure Cognitive Services</div>
     </div>
   </section>
 
@@ -464,7 +507,7 @@
   <section id="projetos">
     <h2>Projetos em destaque</h2>
     <p class="section-text">
-      Seleção de projetos que melhor representam integrações, uso de APIs, aplicações web e exploração de serviços em nuvem.
+      Projetos de estudo e prática que complementam minha atuação profissional em TI, com foco em integrações, aplicações e serviços em nuvem.
     </p>
 
     <div class="grid grid-3" style="margin-top:14px;">
@@ -477,7 +520,7 @@
         </p>
         <p><strong>Repositório:</strong> chatgpt-clone-node-react</p>
         <div class="links-inline">
-          <a href="https://github.com/fiamaribeiro/chatgpt-clone-node-react" target="_blank">Ver no GitHub</a>
+          <a href="https://github.com/fiamaribeiro/chatgpt-clone-node-react" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
         </div>
         <span class="tag">Fullstack básico</span>
         <span class="tag">API &amp; IA</span>
@@ -491,7 +534,7 @@
         </p>
         <p><strong>Repositório:</strong> dio-azure-speech-language</p>
         <div class="links-inline">
-          <a href="https://github.com/fiamaribeiro/dio-azure-speech-language" target="_blank">Ver no GitHub</a>
+          <a href="https://github.com/fiamaribeiro/dio-azure-speech-language" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
         </div>
         <span class="tag">Azure</span>
         <span class="tag">NLP</span>
@@ -505,7 +548,7 @@
         </p>
         <p><strong>Repositório:</strong> housing-map-salesforce</p>
         <div class="links-inline">
-          <a href="https://github.com/fiamaribeiro/housing-map-salesforce" target="_blank">Ver no GitHub</a>
+          <a href="https://github.com/fiamaribeiro/housing-map-salesforce" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
         </div>
         <span class="tag">Salesforce</span>
         <span class="tag">LWC</span>
@@ -531,7 +574,7 @@
         </p>
         <p><strong>Repositório:</strong> classe-heroi</p>
         <div class="links-inline">
-          <a href="https://github.com/fiamaribeiro/classe-heroi" target="_blank">Ver no GitHub</a>
+          <a href="https://github.com/fiamaribeiro/classe-heroi" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
         </div>
         <span class="tag">JavaScript</span>
         <span class="tag">POO</span>
@@ -545,7 +588,7 @@
         </p>
         <p><strong>Repositório:</strong> calculadora-rankeadas-node</p>
         <div class="links-inline">
-          <a href="https://github.com/fiamaribeiro/calculadora-rankeadas-node" target="_blank">Ver no GitHub</a>
+          <a href="https://github.com/fiamaribeiro/calculadora-rankeadas-node" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
         </div>
         <span class="tag">Lógica</span>
         <span class="tag">Node.js</span>
@@ -558,7 +601,7 @@
         </p>
         <p><strong>Repositório:</strong> desafio-felipao-dio</p>
         <div class="links-inline">
-          <a href="https://github.com/fiamaribeiro/desafio-felipao-dio" target="_blank">Ver no GitHub</a>
+          <a href="https://github.com/fiamaribeiro/desafio-felipao-dio" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
         </div>
         <span class="tag">Desafio</span>
         <span class="tag">JavaScript</span>
@@ -572,7 +615,7 @@
         </p>
         <p><strong>Repositório:</strong> dio-lab-open-source (fork)</p>
         <div class="links-inline">
-          <a href="https://github.com/fiamaribeiro/dio-lab-open-source" target="_blank">Ver no GitHub</a>
+          <a href="https://github.com/fiamaribeiro/dio-lab-open-source" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
         </div>
         <span class="tag">Git &amp; GitHub</span>
         <span class="tag">Open Source</span>
@@ -581,38 +624,142 @@
     </div>
   </section>
 
-  <!-- ABOUT ENGLISH -->
-  <section id="about-en">
-    <h2>About (EN)</h2>
-    <p class="section-text">
-      I am an <strong>IT Management student</strong> based in Brazil, developing my skills through hands-on projects in
-      web development, APIs, cloud services, Salesforce and AI-powered applications.
-    </p>
-    <p class="section-text" style="margin-top:6px;">
-      This portfolio showcases my learning journey: from JavaScript fundamentals and integration projects
-      to experiments with Azure Cognitive Services and ChatGPT-like interfaces. Open to opportunities,
-      mentoring and collaboration in the tech ecosystem.
-    </p>
-  </section>
-
   <!-- CONTATO -->
   <section id="contato">
     <h2>Contato</h2>
-    <p>Aberta a conexões, mentorias, comunidades tech e oportunidades de estágio ou entry-level em tecnologia.</p>
-    <p>📧 E-mail: <a href="mailto:fiamaribeiro@outlook.com">fiamaribeiro@outlook.com</a></p>
-    <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/fiama-ribeiro-costa" target="_blank">/fiama-ribeiro-costa</a></p>
-    <p>💻 GitHub: <a href="https://github.com/fiamaribeiro" target="_blank">github.com/fiamaribeiro</a></p>
+    <p>Vamos conversar sobre tecnologia, gestão de software, dados e oportunidades de colaboração.</p>
+    <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/fiama-ribeiro-costa" target="_blank" rel="noopener noreferrer">/fiama-ribeiro-costa</a></p>
+    <p>💻 GitHub: <a href="https://github.com/fiamaribeiro" target="_blank" rel="noopener noreferrer">github.com/fiamaribeiro</a></p>
   </section>
 
 </main>
 
 <footer>
   <div>© <span id="year"></span> Fiama Ribeiro. Todos os direitos reservados.</div>
-  <div>Construído com dados, intenção e código.</div>
+  <div>Gestão de tecnologia, dados e evolução contínua.</div>
 </footer>
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+  // Translations apply to visible text nodes, preserving links and inline formatting.
+  const translations = {
+  "Sobre": "About",
+  "Atuação": "Experience",
+  "Competências": "Skills",
+  "Projetos": "Projects",
+  "Labs & Desafios": "Labs & Challenges",
+  "Contato": "Contact",
+  "Tecnologia da Informação • Licenciamento de Software • Gestão & Dados": "Information Technology • Software Licensing • Management & Data",
+  "Tecnologia, gestão e dados conectados ao negócio.": "Connecting technology, management and data to business.",
+  "Sou": "I am",
+  " ,": " ,",
+  ", profissional de Tecnologia da Informação com atuação em": ", an Information Technology professional working in",
+  "licenciamento de software e processos corporativos": "software licensing and corporate processes",
+  ". Minha trajetória une organização, análise e visão de negócio à formação em Gestão de TI.": ". My background combines organization, analysis and business understanding with IT Management studies.",
+  "Também desenvolvo conhecimentos em": "I am also expanding my skills in",
+  "dados, automação, cloud e desenvolvimento de aplicações": "data, automation, cloud and application development",
+  ", conectando aprendizado técnico às necessidades reais das empresas.": ", linking technical learning to real business needs.",
+  "Conheça minha atuação": "My experience",
+  "Explorar projetos": "Explore projects",
+  "Da gestão de contratos à Tecnologia da Informação": "From contract management to Information Technology",
+  "Experiência com rotinas de contratos e, atualmente, com processos relacionados a licenciamento de software no contexto corporativo.": "Experience in contract operations and, currently, corporate software licensing processes.",
+  "Licenciamento de software": "Software licensing",
+  "Processos e controles": "Processes & controls",
+  "Dados & automação": "Data & automation",
+  "📍 Belo Horizonte · Aberta a conexões profissionais e colaboração em tecnologia.": "📍 Belo Horizonte · Open to professional connections and collaboration in tech.",
+  "Sobre mim": "About me",
+  "Sou estudante de": "I am studying",
+  "Gestão da Tecnologia da Informação na Anhanguera": "Information Technology Management at Anhanguera",
+  "e atuo na área de TI, em atividades relacionadas a": "and work in IT, with activities related to",
+  "licenciamento de software, sistemas e controles corporativos": "software licensing, systems and corporate controls",
+  ". Minha experiência anterior em contratos contribui para uma visão integrada de processos, documentação e necessidades do negócio.": ". My previous contract management experience gives me an integrated view of processes, documentation and business needs.",
+  "Meu objetivo é aprofundar minha atuação na interseção entre": "My goal is to deepen my work at the intersection of",
+  "gestão de tecnologia, governança, dados e melhoria de processos": "technology management, governance, data and process improvement",
+  ". Neste espaço, compartilho projetos e estudos que complementam minha vivência profissional.": ". Here I share projects and studies that complement my professional experience.",
+  "Atuação profissional": "Professional experience",
+  "Experiência corporativa e evolução de carreira em tecnologia.": "Corporate experience and career development in technology.",
+  "Atuação atual · TI": "Current role · IT",
+  "Licenciamento de Software": "Software Licensing",
+  "Vivência em processos de licenciamento de software, organização de informações e fluxos corporativos com apoio de sistemas como SAP.": "Experience with software licensing processes, information organization and corporate workflows supported by systems such as SAP.",
+  "Interesse em aprofundar conhecimentos em gestão de ativos de software, conformidade e eficiência operacional.": "Interested in developing deeper expertise in software asset management, compliance and operational efficiency.",
+  "Experiência anterior": "Previous experience",
+  "Gestão de contratos": "Contract Management",
+  "Experiência em rotinas administrativas e contratuais, conferência de dados, organização documental e suporte a processos de negócio.": "Experience with administrative and contractual tasks, data verification, document organization and business process support.",
+  "Base importante para a transição à gestão de tecnologia em ambientes corporativos.": "A valuable foundation for moving into technology management in corporate environments.",
+  "Formação & prática": "Education & practice",
+  "Gestão de TI, Dados e Desenvolvimento": "IT Management, Data & Development",
+  "Graduação em Gestão da Tecnologia da Informação na Anhanguera, acompanhada de estudos e projetos com APIs, JavaScript, Azure e Salesforce.": "Studying Information Technology Management at Anhanguera, alongside projects involving APIs, JavaScript, Azure and Salesforce.",
+  "Exploração de dados, automação e soluções aplicadas a processos.": "Exploring data, automation and solutions for business processes.",
+  "Competências & ferramentas": "Skills & tools",
+  "Experiência profissional, conhecimentos aplicados e tecnologias em desenvolvimento.": "Professional experience, applied knowledge and technologies I am learning.",
+  "Contexto corporativo": "Corporate environment",
+  "SAP (rotinas e processos)": "SAP (operations & processes)",
+  "Controles e documentação": "Controls & documentation",
+  "Dados, desenvolvimento e cloud · estudos e projetos": "Data, development & cloud · studies and projects",
+  "SQL / MySQL (básico)": "SQL / MySQL (basic)",
+  "Python (básico)": "Python (basic)",
+  "Node.js (básico)": "Node.js (basic)",
+  "React (básico)": "React (basic)",
+  "Salesforce (LWC introdutório)": "Salesforce (introductory LWC)",
+  "Projetos em destaque": "Featured projects",
+  "Projetos de estudo e prática que complementam minha atuação profissional em TI, com foco em integrações, aplicações e serviços em nuvem.": "Hands-on learning projects that complement my IT work, focused on integrations, applications and cloud services.",
+  "Projeto que simula um assistente de chat integrado com API, unindo frontend em React e backend em Node.js. Focado em aprender consumo de APIs, componentes e organização de rotas.": "A chat assistant simulation integrated with an API, combining a React frontend and Node.js backend. Focused on API integration, components and route organization.",
+  "Repositório:": "Repository:",
+  "Ver no GitHub": "View on GitHub",
+  "Fullstack básico": "Basic full-stack",
+  "API & IA": "API & AI",
+  "Laboratório utilizando": "Hands-on lab using",
+  "para reconhecimento de fala, análise de sentimento e extração de informações, explorando cenários de processamento de linguagem natural.": "for speech recognition, sentiment analysis and information extraction, exploring natural language processing use cases.",
+  "Projeto baseado no case DreamHouse, utilizando": "A project based on the DreamHouse use case, using",
+  "para criar interface de imóveis, mapa interativo e experiência de navegação moderna dentro do ecossistema Salesforce.": "to create a property interface, interactive map and modern navigation experience within Salesforce.",
+  "Exercícios práticos realizados em bootcamps e desafios da DIO, importantes para consolidar lógica, sintaxe e disciplina de código.": "Hands-on exercises completed in DIO bootcamps and challenges to strengthen programming logic, syntax and coding discipline.",
+  "⚔️ Classe Herói": "⚔️ Hero Class",
+  "Desafio em JavaScript para criação de classes, atributos e lógica básica. Exercício de fundamentos de programação orientada a objetos.": "JavaScript challenge covering classes, attributes and basic logic. Practice in object-oriented programming fundamentals.",
+  "POO": "OOP",
+  "📊 Calculadora Rankeadas": "📊 Ranked Matches Calculator",
+  "Desafio em Node/JS simulando cálculo de ranking de jogador. Prática de funções, condicionais e saída formatada.": "Node.js challenge to calculate player rankings, practicing functions, conditionals and formatted output.",
+  "Lógica": "Logic",
+  "🏆 Desafio Felipão • DIO": "🏆 Felipão Challenge • DIO",
+  "Implementação de desafio proposto em bootcamp, reforçando fundamentos de sintaxe, variáveis e estruturas de decisão.": "Implementation of a bootcamp challenge to strengthen syntax, variables and decision-making structures.",
+  "Desafio": "Challenge",
+  "🌐 Contribuição Open Source": "🌐 Open Source Contribution",
+  "Participação no lab de contribuição open source da DIO, aprendendo fluxo de fork, branch, pull request e colaboração em repositórios públicos.": "Participation in a DIO open-source contribution lab, learning forks, branches, pull requests and collaboration on public repositories.",
+  "Vamos conversar sobre tecnologia, gestão de software, dados e oportunidades de colaboração.": "Let's connect about technology, software management, data and collaboration opportunities.",
+  "Fiama Ribeiro. Todos os direitos reservados.": "Fiama Ribeiro. All rights reserved.",
+  "Gestão de tecnologia, dados e evolução contínua.": "Technology management, data and continuous growth."
+};
+  const originalNodes = [];
+  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  while (walker.nextNode()) {
+    const node = walker.currentNode;
+    if (node.parentElement?.closest('script, style, #language-toggle')) continue;
+    const original = node.nodeValue;
+    const key = original.replace(/\s+/g, ' ').trim();
+    if (Object.prototype.hasOwnProperty.call(translations, key)) {
+      originalNodes.push({ node, original, english: translations[key] });
+    }
+  }
+  const button = document.getElementById('language-toggle');
+  let language = 'pt';
+  function setLanguage(lang) {
+    language = lang;
+    originalNodes.forEach(({ node, original, english }) => {
+      const match = original.match(/^(\s*)([\s\S]*?)(\s*)$/);
+      node.nodeValue = lang === 'en' ? match[1] + english + match[3] : original;
+    });
+    document.documentElement.lang = lang === 'en' ? 'en' : 'pt-BR';
+    document.title = lang === 'en'
+      ? 'Fiama Ribeiro | IT Management, Software Licensing & Data'
+      : 'Fiama Ribeiro | Gestão de TI, Licenciamento de Software e Dados';
+    document.querySelector('meta[name="description"]').content = lang === 'en'
+      ? 'Fiama Ribeiro portfolio — IT professional focused on software licensing, corporate processes, SAP, contract management, data and automation.'
+      : 'Portfólio de Fiama Ribeiro — profissional de TI com foco em licenciamento de software, processos corporativos, SAP, gestão de contratos, dados e automação.';
+    button.textContent = lang === 'en' ? '🌐 PT' : '🌐 EN';
+    button.setAttribute('aria-label', lang === 'en' ? 'Mudar idioma para português' : 'Switch language to English');
+    button.setAttribute('aria-pressed', String(lang === 'en'));
+  }
+  button.addEventListener('click', () => setLanguage(language === 'pt' ? 'en' : 'pt'));
+
 </script>
 
 </body>
